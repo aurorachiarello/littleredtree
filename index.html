@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	 <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href="bootstrap.css" rel="stylesheet"> 
+    <link href="bootstrap-responsive.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>   
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>	
+    <link href="webfonts/ss-social.css" rel="stylesheet" />
+
+    
+    <title>Little Red Tree</title>
+</head>
+
+<body>			
+	
+ <!-- Nav bar --> 
+  <div class="navigation-bar row-fluid">
+         <div class="navigation span12">   
+            <ul class="navigation-list">
+              <li><a href="#one">ABOUT</a></li> 
+              <li><a href="#two">PRODUCTS</a></li> 
+              <li>	<img src="img/Logo.png"> </li>
+              <li id="folio"><a href="#three">GRAPHIC DESIGN</a></li> 
+              <li><a href="#four">ORDER</a></li>
+            </ul>
+       </div>
+ </div>
+   
+	
+
+<!--About-->
+    <div class="about row-fluid" id="one">	
+    	<div class="about-image span12">
+    		<img src="img/about-img.png">
+    	</div>
+	    <ul>
+		    <li class="about-text span8">
+		    <h3> Little Red Tree </h3>
+	        Little Red Tree is a home based design studio, specialising in designing and printing wedding invitations and stationery. <br> With a background in Graphic Design and a love of designing and creating things, Little Red Tree has developed a range of stylish, modern and vibrant invitations and accessories for all special occasions. 		    <br>
+	Our collection of contemporary wedding stationery can be personalised to suit your individual style, whether it be classic and traditional, elegant or modern. <br>
+	In addition to custom wedding stationery, Little Red Tree also specialises in Graphic design, Corporate Invitations, Baby Announcement Cards, Christening and Birthday Invitations, and also produces a range of handmade children’s homeware and accessories.	    
+			</li>
+		    <li class="about-text2 span4">
+		        <img src="img/branches.png">
+		    </li>
+	    </ul> 
+	</div> 	
+    
+
+
+<!--Products-->
+
+	<div class="product-library row-fluid" id="two"> 
+
+		<div class="invitations span12"> </div>
+		
+		<p id="sub-heading">Invitations</p>
+
+	
+		<ul class="invitation-menu" > 
+			<li class="span3">
+			<p>Wedding</p>
+			<img src="">
+			</li>
+			<li class="span3">
+			<p>Baby Announcement</p>
+			<img src="">
+			</li>
+			<li class="span3"> 
+			<p>Christening</p>
+			<img src="">
+			</li>
+			<li class="span3"> 
+			<p>Birthday</p>
+			<img src="">
+			</li>									
+ 		</ul>
+</div>
+		</div>
+
+
+<!--Contact-->
+
+<div class="contact row-fluid" id="four">
+	
+</div>
+		
+<!--Footer-->
+	<div class="footer row-fluid">
+		<div class="main-footer span12">
+		<div class="footer">
+		</div>
+		</div>
+	</div>		
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script>
+	$(function() {
+	
+		function filterPath(string) {
+			return string
+			.replace(/^\//,'')
+			.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+			.replace(/\/$/,'');
+		}
+	
+		var locationPath = filterPath(location.pathname);
+		var scrollElem = scrollableElement('html', 'body');
+	
+		// Any links with hash tags in them (can't do ^= because of fully qualified URL potential)
+		$('.navigation').find('a[href*=#]').each(function() {
+			// Ensure it's a same-page link
+			var thisPath = filterPath(this.pathname) || locationPath;
+			if (  locationPath == thisPath
+				&& (location.hostname == this.hostname || !this.hostname)
+				&& this.hash.replace(/#/,'') ) {
+	
+					// Ensure target exists
+					var $target = $(this.hash), target = this.hash;
+					if (target) {
+	
+						// Find location of target
+						var targetOffset = $target.offset().top;
+						$(this).click(function(event) {
+	
+							// Prevent jump-down
+							event.preventDefault();
+	
+							// Animate to target
+							$(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+	
+								// Set hash in URL after animation successful
+								location.hash = target;
+	
+							});
+						});
+					}
+			}
+	
+		});
+	
+		// Use the first element that is "scrollable"  (cross-browser fix?)
+		function scrollableElement(els) {
+			for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+				var el = arguments[i],
+				$scrollElement = $(el);
+				if ($scrollElement.scrollTop()> 0) {
+					return el;
+				} else {
+					$scrollElement.scrollTop(1);
+					var isScrollable = $scrollElement.scrollTop()> 0;
+					$scrollElement.scrollTop(0);
+					if (isScrollable) {
+						return el;
+					}
+				}
+			}
+			return [];
+		}
+	
+	});
+	</script>
+</body>
+</html>
+
+

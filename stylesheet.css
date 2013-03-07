@@ -1,0 +1,111 @@
+
+
+/*-------Navigation-------*/    
+.navigation-bar{
+	position: fixed;
+	z-index: 10;
+	opacity: .9;
+	background-color: #E30421;
+}
+	
+.navigation{
+	text-align: center;
+	padding-top: 20px;
+
+}
+
+.navigation-list li{
+	list-style-type: none;
+	display: inline;
+	padding-right: 90px;
+	padding-left: 90px;	
+}
+
+.navigation-list a{
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 25px;
+	color:	white;
+	vertical-align: bottom;
+	line-height: 50px;
+	font-weight: 100;
+}
+
+.navigation-list a:hover{
+	color:	#404041;
+	text-decoration: none;
+}
+
+.navigation-logo{
+	background-color: #E30421;
+}
+
+.navigation-bar img{
+	max-width: 15%;
+}	
+
+
+/*-------About-------*/    
+
+.about{
+	padding-top: 145px;
+	display: block;
+}
+
+.about-image{
+	max-width: 100%;
+	border-bottom: 5px solid #E30421;
+	opacity: .9;
+}
+.about-text2 img{
+	max-width: 60%;
+		opacity: .9;
+}
+
+.about-text h3{
+	font-family:'PT Sans Narrow', sans-serif;
+	font-size: 26px;
+	color: #E30421;
+	line-height: normal;
+}
+
+.about-text{
+	font-family:'PT Sans Narrow', sans-serif;
+	font-size: 20px;
+	color: #404041;
+	padding: 35px 250px 35px 35px;
+	line-height: normal;
+}
+
+
+/*-------Products-------*/    
+
+#two{
+	background-color: #E30421;
+	opacity: .9;
+}
+
+.invitation-menu img{
+	height:300px;
+	width:300px;
+	border: 2px solid #FFFFFF;
+}	
+
+.invitation-menu p{
+	font-family:'PT Sans Narrow', sans-serif;
+	font-size: 26px;
+	color: #FFFFFF;
+	line-height: normal;
+	text-align: center;
+}
+
+.invitation-menu ul{
+	display: inline;
+}
+
+#sub-heading{
+	font-family:'PT Sans Narrow', sans-serif;
+	font-size: 40px;
+	color: #FFFFFF;
+	line-height: normal;
+}
+
