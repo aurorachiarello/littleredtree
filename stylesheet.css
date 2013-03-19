@@ -3,81 +3,89 @@
 /*-------Navigation-------*/    
 .navigation-bar{
 	position: fixed;
-	z-index: 10;
-	opacity: .9;
-	background-color: #E30421;
+	z-index: 100;
+	border-bottom: 10px solid white;
+	background-color: #404041;
 }
 	
-.navigation{
-	text-align: center;
-	padding-top: 20px;
+.navigation-list ul{
+	background-color: #404041;
+	list-style: none;
+	vertical-align: bottom;
+	display: block;
 
 }
 
 .navigation-list li{
-	list-style-type: none;
-	display: inline;
-	padding-right: 90px;
-	padding-left: 90px;	
+	display: inline-table; 
+    text-align: center;
 }
 
-.navigation-list a{
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-size: 25px;
-	color:	white;
-	vertical-align: bottom;
-	line-height: 50px;
+.navigation-list li img{
+	max-width: 60%;
+}
+
+.navigation-list li a{
+	font-family: 'Raleway', sans-serif;
+	font-size: 23px;
+	color: white;
 	font-weight: 100;
+	display: inline;
+	position:absolute;
+    bottom: 20px;
 }
 
 .navigation-list a:hover{
-	color:	#404041;
+	color: white;
+	opacity: .7;
 	text-decoration: none;
 }
 
-.navigation-logo{
+#logo{
 	background-color: #E30421;
+	padding-top: 20px;
 }
 
-.navigation-bar img{
-	max-width: 15%;
-}	
+.home{
+}
+.home-image{
+	margin-top: 170px;
+}
 
 
 /*-------About-------*/    
 
 .about{
-	padding-top: 145px;
-	display: block;
+	height: 590px;
+	border-top: 150px solid #E30421;
+	border-bottom: 150px solid #E30421;
+
 }
 
-.about-image{
+.about-branches img{
 	max-width: 100%;
-	border-bottom: 5px solid #E30421;
-	opacity: .9;
-}
-.about-text2 img{
-	max-width: 60%;
-		opacity: .9;
 }
 
-.about-text h3{
-	font-family:'PT Sans Narrow', sans-serif;
-	font-size: 26px;
+.heading {
+	font-family:'Raleway', sans-serif;
+	font-size: 50px;
 	color: #E30421;
 	line-height: normal;
+	padding: 60px 250px 35px 100px;
+	font-weight: 200;
 }
 
-.about-text{
-	font-family:'PT Sans Narrow', sans-serif;
-	font-size: 20px;
+.text{
+	font-family:'Abel', sans-serif;;
+	opacity: .7;
+	font-size: 22px;
 	color: #404041;
-	padding: 35px 250px 35px 35px;
+	padding: 0px 250px 35px 100px;
 	line-height: normal;
 }
 
 
-/*-------Products-------*/    
+/*-------Products-------  
 
 #two{
 	background-color: #E30421;
@@ -108,4 +116,4 @@
 	color: #FFFFFF;
 	line-height: normal;
 }
-
+*/  
