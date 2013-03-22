@@ -27,7 +27,7 @@
 
 .navigation-list li a{
 	font-family: 'Raleway', sans-serif;
-	font-size: 23px;
+	font-size: 20px;
 	color: white;
 	font-weight: 100;
 	display: inline;
@@ -46,8 +46,6 @@
 	padding-top: 20px;
 }
 
-.home{
-}
 .home-image{
 	margin-top: 170px;
 }
@@ -57,9 +55,8 @@
 
 .about{
 	height: 590px;
-	border-top: 150px solid #E30421;
-	border-bottom: 150px solid #E30421;
-
+	border-top: 10px solid #E30421;
+	border-bottom: 10px solid #E30421;
 }
 
 .about-branches img{
@@ -85,35 +82,43 @@
 }
 
 
-/*-------Products-------  
+/*-------Products-------*/    
 
-#two{
+.products-heading {
+	font-family:'Raleway', sans-serif;
+	font-size: 50px;
+	color: white;
+	line-height: normal;
+	padding: 60px 250px 15px 100px;
+	font-weight: 200;
+}
+
+.sub-heading{
+	font-family:'Raleway', sans-serif;
+	font-size: 50px;
+	color: #404041;
+	line-height: normal;
+	font-weight: 200;
+	padding: 70px 250px 20px 60px;
+
+}
+
+.category{
+	font-family:'Abel', sans-serif;
+	opacity: .7;
+	font-size: 27px;
+	color: #404041;
+	line-height: normal;
+}
+
+.products{
 	background-color: #E30421;
-	opacity: .9;
 }
 
-.invitation-menu img{
-	height:300px;
-	width:300px;
-	border: 2px solid #FFFFFF;
-}	
-
-.invitation-menu p{
-	font-family:'PT Sans Narrow', sans-serif;
-	font-size: 26px;
-	color: #FFFFFF;
-	line-height: normal;
-	text-align: center;
+.invitation-menu{
+	padding-left: 80px;
 }
 
-.invitation-menu ul{
-	display: inline;
+.invitation-menu li img{
+	border: 3px solid #404041;
 }
-
-#sub-heading{
-	font-family:'PT Sans Narrow', sans-serif;
-	font-size: 40px;
-	color: #FFFFFF;
-	line-height: normal;
-}
-*/  
