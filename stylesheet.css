@@ -6,6 +6,7 @@
 	z-index: 100;
 	border-bottom: 10px solid white;
 	background-color: #404041;
+	
 }
 	
 .navigation-list ul{
@@ -13,7 +14,6 @@
 	list-style: none;
 	vertical-align: bottom;
 	display: block;
-
 }
 
 .navigation-list li{
@@ -21,18 +21,15 @@
     text-align: center;
 }
 
-.navigation-list li img{
-	max-width: 60%;
-}
 
 .navigation-list li a{
 	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
+	font-size: 17px;
 	color: white;
 	font-weight: 100;
-	display: inline;
-	position:absolute;
-    bottom: 20px;
+	padding: 0 60px 0 60px;
+	bottom: 0;
+	display:inline-table;
 }
 
 .navigation-list a:hover{
@@ -41,13 +38,14 @@
 	text-decoration: none;
 }
 
-#logo{
+.logo{
 	background-color: #E30421;
 	padding-top: 20px;
+	text-align: center;
 }
 
-.home-image{
-	margin-top: 170px;
+.logo img{
+	max-width: 40%;
 }
 
 
@@ -57,6 +55,7 @@
 	height: 590px;
 	border-top: 10px solid #E30421;
 	border-bottom: 10px solid #E30421;
+
 }
 
 .about-branches img{
@@ -84,22 +83,18 @@
 
 /*-------Products-------*/    
 
-.products-heading {
-	font-family:'Raleway', sans-serif;
-	font-size: 50px;
-	color: white;
-	line-height: normal;
-	padding: 60px 250px 15px 100px;
-	font-weight: 200;
+.invitations-title{
+		height: 118px;
 }
 
 .sub-heading{
 	font-family:'Raleway', sans-serif;
 	font-size: 50px;
-	color: #404041;
+	color: white;
 	line-height: normal;
-	font-weight: 200;
-	padding: 70px 250px 20px 60px;
+	font-weight: 100;
+	padding: 35px 250px 15px 100px;
+	background-color: #E30421;
 
 }
 
@@ -109,14 +104,15 @@
 	font-size: 27px;
 	color: #404041;
 	line-height: normal;
+	padding-top: 20px;
 }
 
-.products{
-	background-color: #E30421;
-}
+
 
 .invitation-menu{
 	padding-left: 80px;
+	list-style: none;
+	padding-top: 50px;
 }
 
 .invitation-menu li img{
