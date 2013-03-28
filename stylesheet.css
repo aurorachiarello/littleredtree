@@ -4,84 +4,103 @@
 .navigation-bar{
 	position: fixed;
 	z-index: 100;
-	border-bottom: 10px solid white;
-	background-color: #404041;
-	
+	background-color: white;
+	opacity: .9;
+	border-bottom: 5px solid #E30421;
+	display: block;
+	text-align: center;
+	height: 100px;
 }
 	
 .navigation-list ul{
-	background-color: #404041;
 	list-style: none;
-	vertical-align: bottom;
-	display: block;
+	vertical-align: baseline;
+	padding: 0;
+	margin: 0;
 }
 
 .navigation-list li{
-	display: inline-table; 
+	display: inline-block; 
     text-align: center;
+    vertical-align: bottom;
 }
 
 
-.navigation-list li a{
+.navigation-list a{
 	font-family: 'Raleway', sans-serif;
-	font-size: 17px;
-	color: white;
+	font-size: 20px;
+	color: #404041;
 	font-weight: 100;
-	padding: 0 60px 0 60px;
-	bottom: 0;
-	display:inline-table;
+	padding-right: 70px;
+	padding-left: 70px;
+	display:inline;
+	line-height: 40px;
 }
 
 .navigation-list a:hover{
-	color: white;
+	color: #E30421;
 	opacity: .7;
 	text-decoration: none;
 }
 
 .logo{
-	background-color: #E30421;
-	padding-top: 20px;
-	text-align: center;
+	padding-top: 10px;
+
 }
 
 .logo img{
-	max-width: 40%;
+	max-height: 90%;
+	margin-left: 70px;
+	margin-right: 70px;
 }
+
+
+/*-------Home-------*/    
+
+
+.home-image{
+	 padding-top: 100px;
+ }
+
+
+
 
 
 /*-------About-------*/    
 
 .about{
-	height: 590px;
-	border-top: 10px solid #E30421;
-	border-bottom: 10px solid #E30421;
+	height: 500px;
+	border-top: 40px solid #404041;
+	border-bottom: 3px solid #E30421;
 
 }
 
 .about-branches img{
-	max-width: 100%;
+	max-height: 100%;
+	overflow: hidden;
+	display: block;
 }
 
 .heading {
 	font-family:'Raleway', sans-serif;
-	font-size: 50px;
+	font-size: 40px;
 	color: #E30421;
 	line-height: normal;
-	padding: 60px 250px 35px 100px;
+	padding: 80px 250px 15px 100px;
 	font-weight: 200;
 }
 
 .text{
 	font-family:'Abel', sans-serif;;
 	opacity: .7;
-	font-size: 22px;
+	font-size: 20px;
 	color: #404041;
-	padding: 0px 250px 35px 100px;
+	padding: 0px 250px 40px 100px;
 	line-height: normal;
 }
 
 
-/*-------Products-------*/    
+/*-------Products-------   
 
 .invitations-title{
 		height: 118px;
@@ -118,3 +137,4 @@
 .invitation-menu li img{
 	border: 3px solid #404041;
 }
+*/ 
