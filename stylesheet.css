@@ -45,7 +45,6 @@
 
 .logo{
 	padding-top: 10px;
-
 }
 
 .logo img{
@@ -60,7 +59,7 @@
 
 .home-image{
 	 padding-top: 100px;
- }
+}
 
 
 
@@ -72,7 +71,6 @@
 	height: 500px;
 	border-top: 40px solid #404041;
 	border-bottom: 3px solid #E30421;
-
 }
 
 .about-branches img{
@@ -100,41 +98,76 @@
 }
 
 
-/*-------Products-------   
+/*-------Products-------*/ 
 
-.invitations-title{
-		height: 118px;
-}
+.products-text{
+	border-top: 40px solid #404041;
+	border-bottom: 3px solid #E30421;}
 
 .sub-heading{
 	font-family:'Raleway', sans-serif;
-	font-size: 50px;
+	font-size: 30px;
 	color: white;
 	line-height: normal;
-	font-weight: 100;
-	padding: 35px 250px 15px 100px;
-	background-color: #E30421;
+	padding: 80px 250px 15px 120px;
+	font-weight: 200;
 
 }
 
 .category{
-	font-family:'Abel', sans-serif;
-	opacity: .7;
-	font-size: 27px;
-	color: #404041;
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	color: white;
 	line-height: normal;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
+.invitations{
+	background-color: #E30421;
+	border-bottom: 1px solid white;
+}
 
-
-.invitation-menu{
-	padding-left: 80px;
+.invitations-menu{
+	display: table;
+	padding-left: 60px;
+	
+}
+.invitations-menu ul{
+	text-align: center;
 	list-style: none;
-	padding-top: 50px;
 }
 
-.invitation-menu li img{
-	border: 3px solid #404041;
+.invitations-menu li{
+	display: inline-block; 
+    text-align: center;
+    padding: 20px 10px 20px 10px;
 }
-*/ 
+
+.invitations-menu li img{
+	border: 3px solid white;
+}
+
+.handmade{
+	background-color: #E30421;
+	border-bottom: 3px solid white;
+}
+
+.handmade-menu{
+	display: table;
+	padding-left: 60px;
+	
+}
+.handmade-menu ul{
+	text-align: center;
+	list-style: none;
+}
+
+.handmade-menu li{
+	display: inline-block; 
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+}
+
+.handmade-menu li img{
+	border: 3px solid white;
+}
