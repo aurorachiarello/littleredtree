@@ -200,7 +200,7 @@ html,body{
 	float:none;
 	margin:0 auto;
 	text-align:center !important;
-	border-bottom: 2px solid #E30421;
+	border-bottom: 5px solid #E30421;
 }
 
 .handmade-menu ul{
@@ -224,15 +224,23 @@ html,body{
 
 /*--------------------------------- Graphic Design ----------------------------
  -----------------------------------------------------------------------------*/
- 
+
 .graphic-design{
-	height: 300px;
-	border-bottom: 3px solid #E30421;
-	width: 100%;
-}
-.graphic-design-image img{
-	height: 100%;
 	display: block;
+    text-align: center !important;
+    border-bottom: 5px solid #E30421;
+
+}
+
+.graphic-design-image{
+	border-bottom: 5px solid #E30421;
+	 max-width: 100%;
+}
+
+.graphic-design-text{
+	display: block;
+	width: 100%;
+	text-align: center;	
 }
 
 
@@ -240,8 +248,81 @@ html,body{
  -----------------------------------------------------------------------------*/
  
 .contact{
-	height: 500px;
-	border-top: 40px solid #404041;
-	border-bottom: 3px solid #E30421;
-	
+	border-bottom: 5px solid #E30421;
+}
+
+.contact-heading{
+	font-family:'Raleway', sans-serif;
+	font-size: 50px;
+	color: #E30421;
+	line-height: normal;
+	padding-top: 4%;
+	padding-bottom: 2%;
+	font-weight: 200;
+	text-align: center;
+}
+
+.contact-text-bold{
+	font-family:'Abel', sans-serif;
+	font-size: 25px;
+	color: #404041;
+	line-height: normal;
+	text-align: left;
+	font-weight: bold;
+}
+
+.contact-text{
+	font-family:'Abel', sans-serif;
+	font-size: 18px;
+	color: #404041;
+	padding-bottom: 3%;
+	line-height: normal;
+	text-align: left;
+}
+
+.contact-buttons{
+	display: block;
+	width: 100%;
+    text-align: center !important;}	
+
+.contact-buttons ul{
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.contact-buttons li{
+	display: inline-block; 
+    text-align: center;
+    padding: 1% 5% 2% 5%;
+
+}
+
+.contact-buttons a{
+	border-radius: 100px;
+	width: 100px;
+	height: 100px;
+	background-color: #E30421;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+}
+
+.contact-buttons a:hover{
+	border: 2px dotted #404041;
+}
+
+.contact-buttons p{
+	color: #E30421;
+	font-family:'Abel', sans-serif;
+	font-size: 15px;
+	text-align: center;
+}
+
+i.ss-icon{
+	color: white;
+	font-size: 45px;
+	text-align: center;
+	line-height: 115px;
 }
