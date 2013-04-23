@@ -4,8 +4,13 @@ html,body{
     text-align:center !important;
 }
 
+
+
+
+
 /*--------------------------------- Nav bar -----------------------------------
  ------------------------------------------------------------------------------*/    
+
 .navigation-bar{
 	position: fixed;
 	z-index: 100;
@@ -19,14 +24,12 @@ html,body{
 .navigation-list ul{
 	list-style: none;
 	vertical-align: baseline;
-
 }
 
 .navigation-list li{
 	display: inline-block; 
     text-align: center;
     vertical-align: bottom;
-
 }
 
 .navigation-list a{
@@ -64,11 +67,12 @@ html,body{
 
 .about{
 	border-bottom: 5px solid #E30421;
+	background-color: #E30421;
 }
 
 .about-image{
 	 padding-top: 5.3%;
-	 border-bottom: 5px solid #E30421;
+	 border-bottom: 5px solid white;
 	 max-width: 100%;
 }
 
@@ -76,6 +80,35 @@ html,body{
 	display: block;
 	width: 100%;
 	text-align: center;	
+}
+
+.about-heading{
+	font-family:'Raleway', sans-serif;
+	font-size: 50px;
+	color: white;
+	line-height: normal;
+	padding-top: 4%;
+	padding-bottom: 2%;
+	font-weight: 200;
+	text-align: center;
+}
+
+.about-text-bold{
+	font-family:'Abel', sans-serif;
+	font-size: 25px;
+	color: white;
+	line-height: normal;
+	text-align: center;
+	font-weight: bold;
+}
+
+.about-text{
+	font-family:'Abel', sans-serif;
+	font-size: 18px;
+	color: white;
+	padding-bottom: 3%;
+	line-height: normal;
+	text-align: center;
 }
 
 .heading{
@@ -108,6 +141,9 @@ html,body{
 }
 
 
+
+
+
 /*----------------------------------- Products ----------------------------------
  ------------------------------------------------------------------------------*/ 
 
@@ -117,9 +153,10 @@ html,body{
 }
 
 .products-image{
-	 border-bottom: 5px solid #E30421;
+	 border-bottom: 5px solid #E3042;
 	 max-width: 100%;
 	 margin-bottom: 3%;
+	 border-top: 5px solid white;
 }
 
 .invitations{
@@ -222,6 +259,9 @@ html,body{
 }
 
 
+
+
+
 /*--------------------------------- Graphic Design ----------------------------
  -----------------------------------------------------------------------------*/
 
@@ -242,6 +282,9 @@ html,body{
 	width: 100%;
 	text-align: center;	
 }
+
+
+
 
 
 /*--------------------------------- Contact -----------------------------------
@@ -283,26 +326,44 @@ html,body{
 .contact-buttons{
 	display: block;
 	width: 100%;
-    text-align: center !important;}	
+    text-align: center !important;
+    margin-left: 0;
+}	
 
 .contact-buttons ul{
 	text-align: center;
 	list-style: none;
-	padding: 0;
+	padding: 0 !important;
 	margin: 0;
 	width: 100%;
+	vertical-align: baseline;
 }
+
 .contact-buttons li{
 	display: inline-block; 
     text-align: center;
-    padding: 1% 5% 2% 5%;
+}
 
+#email{
+	padding: 2% 0 2% 0%;
+}
+
+#phone{
+	padding: 1% 4% 2% 4%;
+}
+
+#facebook{
+	padding: 1% 5% 2% 4%;
+}
+
+#stockists{
+	padding: 1% 5% 2% 4%;
 }
 
 .contact-buttons a{
-	border-radius: 100px;
-	width: 100px;
-	height: 100px;
+	border-radius: 70px;
+	width: 70px;
+	height: 70px;
 	background-color: #E30421;
 	display: inline-block;
 	text-align: center;
@@ -310,7 +371,7 @@ html,body{
 }
 
 .contact-buttons a:hover{
-	border: 2px dotted #404041;
+	border: solid 3px #404041;
 }
 
 .contact-buttons p{
@@ -318,11 +379,79 @@ html,body{
 	font-family:'Abel', sans-serif;
 	font-size: 15px;
 	text-align: center;
+	padding-top: 10px;
 }
 
 i.ss-icon{
 	color: white;
-	font-size: 45px;
+	font-size: 35px;
 	text-align: center;
-	line-height: 115px;
+	line-height: 80px;
+}
+
+.stockists{
+	display: inline;
+	width: 100%;
+    text-align: center !important;
+    }	
+
+.stockists ul{
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-left: 0 !important;
+}
+
+.stockists li{
+    text-align: center;
+}
+
+.modal-body{
+	padding: 0;
+	max-height: 100%;
+	
+}
+
+.modal.fade{
+	width: 1500px;
+	right: 25%;
+	left:25%;
+}
+
+
+.carousel-caption{
+	background: #E30421;
+	height: 20px;
+}
+
+.carousel-text{
+	font-family:'Abel', sans-serif;
+	font-size: 18px;
+	color: white;
+	padding-right: 3%;
+	line-height: normal;
+	text-align: right;
+}
+.btn{
+	background-color: none;
+	vertical-align: bottom;
+	border: 0;
+}
+
+.modal-heading{
+	font-family:'Raleway', sans-serif;
+	font-size: 30px;
+	color: #E30421;
+	line-height: normal;
+	padding-top: 1%;
+	padding-left: 3%;
+	font-weight: 200;
+	text-align: left;
+}
+
+.close{
+	font-size: 30px;
+	color: #E30421;
+	opacity: 10;
 }
