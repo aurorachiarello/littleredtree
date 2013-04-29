@@ -4,9 +4,17 @@ html,body{
     text-align:center !important;
 }
 
+.background-red{
+	background-color: #E30421;
+	z-index: 1;
+}
 
-
-
+.background-white{
+	background-color: white;
+	z-index: 50;
+	border-left: 1px solid #404041;
+	border-right: 1px solid #404041;
+}
 
 /*--------------------------------- Nav bar -----------------------------------
  ------------------------------------------------------------------------------*/    
@@ -53,7 +61,7 @@ html,body{
 }
 
 .logo img{
-	max-height: 90%;
+	max-height: 95px;
 	margin-left: 70px;
 	margin-right: 70px;
 }
@@ -66,46 +74,32 @@ html,body{
  ------------------------------------------------------------------------------*/   
 
 .about{
-	border-bottom: 5px solid #E30421;
-	background-color: #E30421;
+	    border-bottom: 3px solid #E30421;
 }
 
 .about-image{
 	 padding-top: 5.3%;
-	 border-bottom: 5px solid white;
 	 max-width: 100%;
+	 border-top: 1px solid #404041;
+	 border-bottom: 1px solid #404041;
 }
 
-.about-text{
-	display: block;
-	width: 100%;
-	text-align: center;	
-}
-
-.about-heading{
-	font-family:'Raleway', sans-serif;
-	font-size: 50px;
-	color: white;
-	line-height: normal;
-	padding-top: 4%;
-	padding-bottom: 2%;
-	font-weight: 200;
-	text-align: center;
-}
 
 .about-text-bold{
 	font-family:'Abel', sans-serif;
 	font-size: 25px;
-	color: white;
+	color: #404041;
 	line-height: normal;
 	text-align: center;
 	font-weight: bold;
+	padding-left: 7%;
+	padding-right: 7%;
 }
 
 .about-text{
 	font-family:'Abel', sans-serif;
 	font-size: 18px;
-	color: white;
+	color: #404041;
 	padding-bottom: 3%;
 	line-height: normal;
 	text-align: center;
@@ -129,6 +123,8 @@ html,body{
 	line-height: normal;
 	text-align: center;
 	font-weight: bold;
+	padding-left: 7%;
+	padding-right: 7%;
 }
 
 .text{
@@ -138,6 +134,8 @@ html,body{
 	padding-bottom: 3%;
 	line-height: normal;
 	text-align: center;
+	padding-left: 7%;
+	padding-right: 7%;
 }
 
 
@@ -150,13 +148,13 @@ html,body{
 .products{
 	display: block;
     text-align: center !important;
+    border-bottom: 3px solid #E30421;
 }
 
 .products-image{
-	 border-bottom: 5px solid #E3042;
 	 max-width: 100%;
-	 margin-bottom: 3%;
-	 border-top: 5px solid white;
+	 border-top: 1px solid #404041;
+	 border-bottom: 1px solid #404041;
 }
 
 .invitations{
@@ -166,12 +164,11 @@ html,body{
 }
 
 .invitations-menu{
-	padding-top: 4%;
-	padding-bottom: 0;
+	padding-bottom: 1%;
 	float:none;
 	margin:0 auto;
 	text-align:center !important;
-	border-bottom: 2px dotted #E30421;
+	border-bottom: 1px dotted #E30421;
 }
 
 .invitations-menu ul{
@@ -185,30 +182,23 @@ html,body{
 .invitations-menu li{
 	display: inline-block; 
     text-align: center;
-    padding: 1% 2% 2% 2%;
+    padding: 3% 2% 2% 2%;
 }
 
 .invitations-menu li img{
-	max-height: 20%;
-	padding-bottom: 2%;
+	max-height: 200px;
+	padding-bottom: 3%;
+	padding-top: 1%;
+	border-top: 1px solid #404041;
+	border-bottom: 1px solid #404041;
 }
 
 .products-text{
-	border-bottom: 3px solid #E30421;
 	display: block;
 	width: 100%;
 	text-align: center;	
 }
 
-#red{
-	font-family:'Abel', sans-serif;
-	font-size: 20px;
-	color: #E30421;
-	padding: 0 0 1% 0;
-	line-height: normal;
-	text-align: center;
-	font-weight: bold;
-}
 
 .sub-heading{
 	font-family:'Abel', sans-serif;
@@ -234,10 +224,9 @@ html,body{
 }
 
 .handmade-menu{
-	float:none;
-	margin:0 auto;
+	float: none;
+	margin: 0 auto;
 	text-align:center !important;
-	border-bottom: 5px solid #E30421;
 }
 
 .handmade-menu ul{
@@ -251,11 +240,15 @@ html,body{
 .handmade-menu li{
 	display: inline-block; 
     text-align: center;
-    padding: 1% 2% 2% 2%;
+    padding: 0% 2% 2% 2%;
 }
 
 .handmade-menu li img{
-	max-height: 20%;
+	max-height: 200px;
+	border-top: 1px solid #404041;
+	border-bottom: 1px solid #404041;
+	padding-bottom: 3%;
+	padding-top: 1%;
 }
 
 
@@ -268,13 +261,14 @@ html,body{
 .graphic-design{
 	display: block;
     text-align: center !important;
-    border-bottom: 5px solid #E30421;
+    border-bottom: 3px solid #E30421;
 
 }
 
 .graphic-design-image{
-	border-bottom: 5px solid #E30421;
-	 max-width: 100%;
+	border-top: 1px solid #404041;
+	border-bottom: 1px solid #404041;
+	max-width: 100%;
 }
 
 .graphic-design-text{
@@ -291,7 +285,6 @@ html,body{
  -----------------------------------------------------------------------------*/
  
 .contact{
-	border-bottom: 5px solid #E30421;
 }
 
 .contact-heading{
@@ -312,6 +305,7 @@ html,body{
 	line-height: normal;
 	text-align: left;
 	font-weight: bold;
+	padding-left: 5%;
 }
 
 .contact-text{
@@ -321,6 +315,7 @@ html,body{
 	padding-bottom: 3%;
 	line-height: normal;
 	text-align: left;
+	padding-left: 5%;
 }
 
 .contact-buttons{
@@ -349,15 +344,15 @@ html,body{
 }
 
 #phone{
-	padding: 1% 4% 2% 4%;
+	padding: 1% 2% 2% 2%;
 }
 
 #facebook{
-	padding: 1% 5% 2% 4%;
+	padding: 1% 2% 2% 2%;
 }
 
 #stockists{
-	padding: 1% 5% 2% 4%;
+	padding: 1% 2% 2% 2%;
 }
 
 .contact-buttons a{
@@ -371,7 +366,7 @@ html,body{
 }
 
 .contact-buttons a:hover{
-	border: solid 3px #404041;
+	background-color: #404041;
 }
 
 .contact-buttons p{
@@ -414,9 +409,11 @@ i.ss-icon{
 }
 
 .modal.fade{
-	width: 1500px;
-	right: 25%;
-	left:25%;
+     position: fixed;
+     left: 39%;
+     top: 100%;
+     width:1000px;
+     text-align:center;
 }
 
 
@@ -433,6 +430,7 @@ i.ss-icon{
 	line-height: normal;
 	text-align: right;
 }
+
 .btn{
 	background-color: none;
 	vertical-align: bottom;
