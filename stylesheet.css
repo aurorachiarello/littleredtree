@@ -12,8 +12,6 @@ html,body{
 .background-white{
 	background-color: white;
 	z-index: 50;
-	border-left: 1px solid #404041;
-	border-right: 1px solid #404041;
 }
 
 /*--------------------------------- Nav bar -----------------------------------
@@ -23,10 +21,11 @@ html,body{
 	position: fixed;
 	z-index: 100;
 	background-color: white;
-	border-bottom: 5px solid #E30421;
+	border-bottom: 2px solid #E30421;
 	display: block;
 	text-align: center;
 	height: 100px;
+	margin: 0;
 }
 	
 .navigation-list ul{
@@ -42,7 +41,7 @@ html,body{
 
 .navigation-list a{
 	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
+	font-size: 17px;
 	color: #404041;
 	font-weight: 100;
 	padding-right: 70px;
@@ -62,8 +61,8 @@ html,body{
 
 .logo img{
 	max-height: 95px;
-	margin-left: 70px;
-	margin-right: 70px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 
@@ -74,7 +73,7 @@ html,body{
  ------------------------------------------------------------------------------*/   
 
 .about{
-	    border-bottom: 3px solid #E30421;
+	border-bottom: 2px dotted #E30421;
 }
 
 .about-image{
@@ -87,7 +86,7 @@ html,body{
 
 .about-text-bold{
 	font-family:'Abel', sans-serif;
-	font-size: 25px;
+	font-size: 20px;
 	color: #404041;
 	line-height: normal;
 	text-align: center;
@@ -98,7 +97,7 @@ html,body{
 
 .about-text{
 	font-family:'Abel', sans-serif;
-	font-size: 18px;
+	font-size: 17px;
 	color: #404041;
 	padding-bottom: 3%;
 	line-height: normal;
@@ -107,7 +106,7 @@ html,body{
 
 .heading{
 	font-family:'Raleway', sans-serif;
-	font-size: 50px;
+	font-size: 35px;
 	color: #E30421;
 	line-height: normal;
 	padding-top: 4%;
@@ -118,7 +117,7 @@ html,body{
 
 .text-bold{
 	font-family:'Abel', sans-serif;
-	font-size: 25px;
+	font-size: 20px;
 	color: #404041;
 	line-height: normal;
 	text-align: center;
@@ -129,7 +128,7 @@ html,body{
 
 .text{
 	font-family:'Abel', sans-serif;
-	font-size: 18px;
+	font-size: 17px;
 	color: #404041;
 	padding-bottom: 3%;
 	line-height: normal;
@@ -148,7 +147,7 @@ html,body{
 .products{
 	display: block;
     text-align: center !important;
-    border-bottom: 3px solid #E30421;
+	border-bottom: 2px dotted #E30421;
 }
 
 .products-image{
@@ -202,7 +201,7 @@ html,body{
 
 .sub-heading{
 	font-family:'Abel', sans-serif;
-	font-size: 35px;
+	font-size: 25px;
 	color: #404041;
 	line-height: normal;
 	text-align: center;
@@ -210,7 +209,7 @@ html,body{
 
 .category{
 	font-family: 'Raleway', sans-serif;
-	font-size: 17px;
+	font-size: 15px;
 	color: #404041;
 	line-height: normal;
 	padding-top: 5%;
@@ -261,7 +260,7 @@ html,body{
 .graphic-design{
 	display: block;
     text-align: center !important;
-    border-bottom: 3px solid #E30421;
+	border-bottom: 2px dotted #E30421;
 
 }
 
@@ -289,7 +288,7 @@ html,body{
 
 .contact-heading{
 	font-family:'Raleway', sans-serif;
-	font-size: 50px;
+	font-size: 35px;
 	color: #E30421;
 	line-height: normal;
 	padding-top: 4%;
@@ -300,7 +299,7 @@ html,body{
 
 .contact-text-bold{
 	font-family:'Abel', sans-serif;
-	font-size: 25px;
+	font-size: 20px;
 	color: #404041;
 	line-height: normal;
 	text-align: left;
@@ -310,7 +309,7 @@ html,body{
 
 .contact-text{
 	font-family:'Abel', sans-serif;
-	font-size: 18px;
+	font-size: 17px;
 	color: #404041;
 	padding-bottom: 3%;
 	line-height: normal;
@@ -430,11 +429,22 @@ i.ss-icon{
 	line-height: normal;
 	text-align: right;
 }
-
 .btn{
 	background-color: none;
+}	
+
+.btn{
+	background-color: white;
 	vertical-align: bottom;
+	background-image: none;
 	border: 0;
+	box-shadow: none;
+}
+	
+.btn:hover{
+	background-color: white;
+	background-image: none;
+	opacity: .6;	
 }
 
 .modal-heading{
