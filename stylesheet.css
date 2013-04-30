@@ -2,6 +2,7 @@ html,body{
 	float:none;
 	margin:0 auto !important;
     text-align:center !important;
+    width: 100%;
 }
 
 .background-red{
@@ -14,6 +15,10 @@ html,body{
 	z-index: 50;
 }
 
+
+ul{
+	margin: 0 0 0 0;
+}
 /*--------------------------------- Nav bar -----------------------------------
  ------------------------------------------------------------------------------*/    
 
@@ -24,18 +29,20 @@ html,body{
 	border-bottom: 2px solid #E30421;
 	display: block;
 	text-align: center;
-	height: 100px;
 	margin: 0;
+	padding: 0;
 }
 	
+.navigation-menu{
+	width: 100%;
+	}
+
 .navigation-list ul{
 	list-style: none;
-	vertical-align: baseline;
 }
 
 .navigation-list li{
 	display: inline-block; 
-    text-align: center;
     vertical-align: bottom;
 }
 
@@ -56,7 +63,7 @@ html,body{
 }
 
 .logo{
-	padding-top: .5%;
+	padding-top: .7%;
 }
 
 .logo img{
@@ -239,7 +246,7 @@ html,body{
 .handmade-menu li{
 	display: inline-block; 
     text-align: center;
-    padding: 0% 2% 2% 2%;
+    padding: 3% 2% 2% 2%;
 }
 
 .handmade-menu li img{
