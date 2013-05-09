@@ -148,31 +148,25 @@ ul{
 }
 
 .invitations-menu{
-	text-align: justify !important;
 	border-bottom: 1px dotted #E30421;
 	list-style-type: none;
 }
 
-.invitations-menu div, ul, li{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
   
 .invitations-menu ul{
 	text-align: justify;
-	list-style: none;
-	font-size: 0.1px;
+	font-size: 2em;
+	width: 65.95744680851064%;
 }
 
 .invitations-menu li{
   display: inline-block;
-  width: 24.5%;
+  width: 24.7%%;
 }
 
 
 .invitations-menu li img{
-	max-height: 20em;
+	max-height: 100%;
 	padding-bottom: .5em;
 	padding-top: 1em;
 	/* border-top: 1px solid #404041;
@@ -181,6 +175,7 @@ ul{
 .padding{
 	padding: 0;
 	margin: 0;
+	text-align: justify;
 }
 .products-text{
 	display: block;
