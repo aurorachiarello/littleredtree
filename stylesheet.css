@@ -2,7 +2,8 @@ html,body{
 	float:none;
 	margin:0 auto !important;
     text-align:center !important;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%
 }
 
 
@@ -14,6 +15,10 @@ html,body{
 ul{
 	margin: 0 0 0 0;
 }
+
+
+
+
 /*--------------------------------- Nav bar -----------------------------------
  ------------------------------------------------------------------------------*/    
 
@@ -75,7 +80,6 @@ ul{
  ------------------------------------------------------------------------------*/   
 
 .about{
-	border-bottom: 3px solid #E30421;
 	padding-top: 4em;
 }
 
@@ -101,7 +105,6 @@ ul{
 	text-align: left;
 	padding-left: .2em;
 	padding-right: .2em;
-	padding-bottom: 1.5em;
 }
 
 .heading{
@@ -131,7 +134,9 @@ ul{
 	text-align: left;
 }
 
-
+#red{
+	color: #E30421;
+}
 
 
 
@@ -140,43 +145,19 @@ ul{
 
 .products{
 	padding-top: 4em;
-	padding-bottom: 1.5em;
 }
 
 .products-image{
 	 max-width: 100%;
+	 border-top: 3px solid #E30421;
 }
 
 .invitations-menu{
 	border-bottom: 1px dotted #E30421;
-	list-style-type: none;
-}
-
-  
-.invitations-menu ul{
-	text-align: justify;
-	font-size: 2em;
-	width: 65.95744680851064%;
-}
-
-.invitations-menu li{
-  display: inline-block;
-  width: 24.7%%;
-}
-
-
-.invitations-menu li img{
-	max-height: 100%;
-	padding-bottom: .5em;
+	padding-bottom: 1.5em;
 	padding-top: 1em;
-	/* border-top: 1px solid #404041;
-	border-bottom: 1px solid #404041;*/
 }
-.padding{
-	padding: 0;
-	margin: 0;
-	text-align: justify;
-}
+
 .products-text{
 	display: block;
 	text-align: left;
@@ -184,14 +165,12 @@ ul{
 	padding-right: .2em;	
 }
 
-
 .sub-heading{
 	font-family:'Abel', sans-serif;
 	font-size: 25px;
 	color: #404041;
 	line-height: normal;
 	text-align: left;
-
 }
 
 .category{
@@ -200,7 +179,6 @@ ul{
 	color: #404041;
 	line-height: normal;
 	padding-top: .5em;
-
 }
 
 .handmade{
@@ -213,26 +191,13 @@ ul{
 
 .handmade-menu{
 	text-align: left !important;
+	list-style-type: none;
 }
 
-.handmade-menu ul{
-	text-align: center;
-	width: 100%;
+.handmade-menu{
+	padding-bottom: 1.5em;
+	padding-top: 1em;
 }
-
-.handmade-menu li{
-	display: inline-block; 
-    padding: 0 4em 1em 0;
-}
-
-.handmade-menu li img{
-	max-height: 18em;
-	padding-bottom: .5em;
-	padding-top: 1em;	
-	/*border-top: 1px solid #404041;
-	border-bottom: 1px solid #404041;*/
-}
-
 
 
 
@@ -257,7 +222,7 @@ ul{
 	text-align: left;	
 	padding-left: .2em;
 	padding-right: .2em;
-	padding-bottom: 2em;
+	padding-bottom: 4em;
 }
 
 
@@ -299,6 +264,21 @@ ul{
 	line-height: normal;
 	text-align: left;
 	margin-left: -1em;
+}
+
+.pricelist a{
+	font-family:'Abel', sans-serif;
+	font-size: 20px;
+	color: #E30421;
+	line-height: normal;
+	text-align: left;
+	font-weight: bold;
+	margin-left: -1em;
+}
+
+.pricelist a:hover{
+	color: #404041;
+	text-decoration: none;
 }
 
 .contact-buttons{
