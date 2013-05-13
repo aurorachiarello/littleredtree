@@ -8,6 +8,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link href="bootstrap.css" rel="stylesheet"> 
+    <link href="bootstrap-responsive.css" rel="stylesheet"> 
     <link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
    	<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
    	<link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
@@ -24,27 +25,26 @@
  <!--------------------------------- Nav bar -----------------------------------
  ------------------------------------------------------------------------------> 
 <div class="site row-fluid">
-<div class="background-white span8 offset2">
 
-  <div class="navigation-bar span8">
+<div class="row-fluid">
+  <div class="navigation-bar span8 offset2">
          <div class="navigation-menu">   
             <ul class="navigation-list">
               <li><a href="#one">ABOUT US</a></li> 
               <li><a href="#two">OUR PRODUCTS</a></li> 
               <li><a href="#three">GRAPHIC DESIGN</a></li> 
               <li><a href="#four">CONTACT US</a></li>
-              <li class="logo">	<img src="img/white-logo.png"/></li>
+              <li class="logo hidden-phone">	<img class="hidden-phone" src="img/white-logo.png"/></li>
             </ul>
          </div>
   </div>
-
-
+</div>
 
  <!--------------------------------- About --------------------------------------
  ------------------------------------------------------------------------------> 
 
-<div class="about row-fluid" id="one">
-	<div class="span12">	
+<div class="row-fluid" id="one">
+	<div class="about span8 offset2">	
     	<div class="about-image">
     		<img src="img/about.jpg"/>
     	</div>  
@@ -65,8 +65,8 @@
  ------------------------------------------------------------------------------> 
  
 
-<div class="products row-fluid" id="two">
-	<div class="span12">	
+<div class="row-fluid" id="two">
+	<div class="products span8 offset2">	
 
 		<div class="products-image">
     		<img src="img/products.jpg"/>
@@ -79,7 +79,7 @@
 
 	<div class="row-fluid">	
 		<div class="row-fluid">	
-		<div class="span12">	
+		<div class="handmade span8 offset2">	
 				<p class="sub-heading"> INVITATIONS </p>
 				<p class="text-bold"> Our collection of contemporary wedding stationery can be personalised to suit your individual style, whether it be
 						classic and traditional, elegant or modern. </p> 
@@ -88,8 +88,8 @@
 						guests. Our invitations are beautifully handmade with love and attention to detail, using the finest quality papers and material. </p>
 		</div>
 		</div>
-			<div class="invitations-menu row-fluid"> 
-			<div class="handmade-menu span12">
+			<div class="row-fluid"> 
+			<div class="invitations-menu span8 offset2">
 				<div class="span3">
 					<a href="#products" role="button" class="btn" data-toggle="modal">
 					<img src="img/products_sq.png">
@@ -113,11 +113,14 @@
 			</div>
 			</div>
 	</div>
+
+
 	
  <!--------------------------------- Handmade ---------------------------------->
-		<div class="row-fluid">	
+
+<div class="row-fluid">	
 			<div class="row-fluid">
-			<div class="handmade span12"> 
+			<div class="handmade span8 offset2"> 
 			     <p class="sub-heading">HANDMADE</p>
 			     <p class="text-bold"> As a result of my passion and love of decorative pattern and beautiful fabric, Little Red Tree has created a range of fun 
 				     	and unique accessories for children’s interiors.  </p> 
@@ -155,11 +158,11 @@
 						<span id="red">Hot Air Balloon Mobiles</span>
 						 come in two sizes. Small balloons are ? and large balloons are
 				</p>
-		</div>
-		</div>	
+			</div>
+			</div>	
 	
 			<div class="row-fluid">
-			<div class="handmade-menu span12">
+			<div class="handmade-menu span8 offset2">
 				<div class="span3">
 					<a href="#products" role="button" class="btn" data-toggle="modal">
 					<img src="img/products_sq.png">
@@ -184,7 +187,7 @@
 			</div>
 			
 			<div class="row-fluid">
-			<div class="handmade-menu span12">
+			<div class="handmade-menu span8 offset2">
 				<div class="span3">
 					<a href="#products" role="button" class="btn" data-toggle="modal"> 
 					<img src="img/products_sq.png">
@@ -209,7 +212,7 @@
 			</div>
 			
 			<div class="row-fluid">
-			<div class="handmade-menu span12">
+			<div class="handmade-menu span8 offset2">
 				<div class="span3">
 					<a href="#products" role="button" class="btn" data-toggle="modal"> 
 					<img src="img/products_sq.png">
@@ -223,15 +226,16 @@
 			</div>
 			</div>
 
-		</div>
+</div>
+</div>
 
 
 
  <!--------------------------------- Graphic Design ----------------------------
  ------------------------------------------------------------------------------> 
  
-	<div class="graphic-design row-fluid" id="three"> 
-	<div class="span12">	
+ <div class="row-fluid" id="three"> 
+	<div class="graphic-design span8 offset2">	
 		<div class="graphic-design-image">
     		<img src="img/graphic-design.jpg"/>
     	</div>
@@ -245,7 +249,6 @@
 			</div>
 	</div>
 	</div>
-</div>
 
 
 
@@ -255,13 +258,13 @@
  ------------------------------------------------------------------------------> 
  	
 	
-	<div class="contact row-fluid" id="four"> 
-	<div class="span12">	
+<div class="row-fluid" id="four"> 
+	<div class="contact span8 offset2">	
 		<div>
 		    <p class="contact-heading">contact us</p>
 		</div>
 			
-		<div class="contact-text span5">
+		<div class="contact-text span4">
 			<p class="contact-text-bold">For a personal consultation to discuss custom wedding stationery, for information on any of our handmade products
 					or to place an order, please contact Pina on 0419 308 592 or alternatively send us an email.</p>
 			<p class="contact-text">Please note that we are open by appointment only!</p>
@@ -294,7 +297,7 @@
 			</ul>
 		</div>
 	</div>
-	</div>
+</div>
 
 
 
@@ -303,13 +306,12 @@
  <!--------------------------------- Footer -----------------------------------
  ------------------------------------------------------------------------------> 	
  
- 	<div class="footer row-fluid">
- 	<div class="span12">
+ <div class="row-fluid">
+ 	<div class="footer span8 offset2">
 		<p>	<span class="footer-text">little red tree © 2009</span>	<span class="aurora"> designed & developed by <a href="http://www.aurorachiarello.com/"> AURORA CHIARELLO</a></span> </p>
 	</div>
- 	</div>
+ </div>
 
-</div>
 </div>
 
 
