@@ -26,7 +26,8 @@ html,body{
 	background-color: #E30421;
 	display: block;
 	text-align: center;
-	border-bottom: 3px solid white; 	
+	border-bottom: 3px solid white;
+	padding-top: 1em; 	
 }
 	
 .navigation-menu{
@@ -42,17 +43,22 @@ html,body{
 .navigation-list li{
 	display: inline-block; 
     vertical-align: bottom;
+    bottom: 0;
 }
 
-.navigation-list a{
+.navigation-list li a{
 	font-family: 'Raleway', sans-serif;
 	font-size: 17px;
 	color: white;
 	font-weight: 100;
-	padding-right: 3em;
-	padding-left: 3em;
-	display: inline;
+	padding-left: 5em;
+	display: block;
 	line-height: 2.5em;
+	 -webkit-transition: all .5s ease;
+	 -moz-transition: all .5s ease;
+	 -o-transition: all .5s ease;
+	 -ms-transition: all .5s ease;
+	 transition: all .5s ease;
 }
 
 .navigation-list a:hover{
@@ -66,8 +72,6 @@ html,body{
 
 .logo img{
 	max-height: 7em;
-	padding-right: 3em;
-	padding-left: 3em;
 }
 
 
@@ -150,9 +154,16 @@ html,body{
 	 border-top: 3px solid #E30421;
 }
 
+.invitations{
+	display: block;
+    text-align: left !important;
+    padding-left: .2em;
+	padding-right: .2em;
+}
+
 .invitations-menu{
 	border-bottom: 1px dotted #E30421;
-	padding-bottom: 1.5em;
+	padding-bottom: 2em;
 	padding-top: 1em;
 }
 
@@ -173,10 +184,12 @@ html,body{
 
 .category{
 	font-family: 'Raleway', sans-serif;
-	font-size: 12px;
+	font-size: 15px;
 	color: #404041;
 	line-height: normal;
 	padding-top: .5em;
+	text-align: left;
+	padding-top: 1em;
 }
 
 .handmade{
@@ -196,6 +209,17 @@ html,body{
 	padding-bottom: 1.5em;
 	padding-top: 1em;
 }
+
+.handmade img{
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+
+
 
 
 
@@ -233,6 +257,7 @@ html,body{
 .contact{
 	display: block;
 	padding-top: 1em;
+	padding-bottom: 4em;
 }
 
 .contact-heading{
@@ -262,6 +287,7 @@ html,body{
 	line-height: normal;
 	text-align: left;
 	margin-left: -1.5em;
+
 }
 
 .pricelist a{
@@ -322,6 +348,11 @@ html,body{
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
+	-webkit-transition: all .5s ease;
+	 -moz-transition: all .5s ease;
+	 -o-transition: all .5s ease;
+	 -ms-transition: all .5s ease;
+	 transition: all .5s ease;
 }
 
 .contact-buttons a:hover{
@@ -369,7 +400,6 @@ i.ss-icon{
 .modal-body{
 	padding: 0;
 	max-height: 100%;
-	
 }
 
 .modal.fade{
@@ -401,7 +431,6 @@ i.ss-icon{
 .btn a:hover, a:active {
 	outline: none;
 }
-
 
 .modal-heading{
 	font-family:'Homemade Apple', cursive;
@@ -476,6 +505,11 @@ i.ss-icon{
   box-shadow: none;
   border-bottom-color: none;
   webkit-box-shadow: none;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
 }
 
 
@@ -484,30 +518,36 @@ i.ss-icon{
 .btn.active,
 .btn.disabled,
 .btn[disabled] {
-  opacity: .7;
-  border: none;
   outline: none;
-
+  -webkit-filter: opacity(.65);
+  -moz-filter: opacity(.65);
+  -o-transition-filter: opacity(.65);
+  -ms-transition-filter: opacity(.65);
+  transition-filter: opacity(.65);
+  opacity: .65;
 }
  
 .btn:active,
 .btn.active {
   border: none;
   outline: none;
-
 } 
  
 .btn:first-child {
   border: none;
   outline: none;
-
 } 
  
 .btn:hover {
-  opacity: .7;
   text-decoration: none;
   background-color: white;
   color: white;
+  -webkit-filter: opacity(.65);
+  -moz-filter: opacity(.65);
+  -o-transition-filter: opacity(.65);
+  -ms-transition-filter: opacity(.65);
+  transition-filter: opacity(.65);
+  opacity: .65;
 } 
  
 .btn.active,
