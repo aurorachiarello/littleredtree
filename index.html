@@ -28,7 +28,7 @@
  ------------------------------------------------------------------------------> 
 <div class="site row-fluid">
 
-<div class="row-fluid">
+<!-- <div class="row-fluid">
   <div class="navigation-bar span8 offset2 clearfix">
          <div class="navigation-menu">   
             <ul class="navigation-list span8" style= "line-height: 8em">
@@ -42,7 +42,40 @@
 			</div>
 		</div>
   </div>
-</div>
+</div> 
+-->
+
+<div class="navbar navbar-inverse navbar-fixed-top row-fluid">
+	<div class="navbar-inner span8 offset2">
+		<div class="container span12">
+			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<p>MENU</p>
+			</button>
+			
+			<a href="#one" class="brand logo"></a> 
+
+			<div class="nav-collapse collapse">
+				<ul class="nav">
+					<li>
+					<a href="#one">ABOUT US</a>
+					</li>
+					<li>
+					<a href="#two">OUR PRODUCTS</a>
+					</li>
+					<li>
+					<a href="#three">GRAPHIC DESIGN</a>
+					</li>
+					<li>
+					<a href="#four">CONTACT US</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div> 
+
+
+
 
  <!--------------------------------- About --------------------------------------
  ------------------------------------------------------------------------------> 
@@ -57,7 +90,7 @@
 			    	<p class="text-bold">Little Red Tree is a small graphic design studio, specialising in designing and printing wedding invitations and stationery. </p> 
 			        <p class="text"> With a background in Graphic Art and Design and a love of designing and creating things, Little Red Tree has developed 
 					a range of stylish, modern and vibrant invitations and accessories for all special occasions.
-					In addition to custom wedding stationery, Little Red Tree also specialises in Graphic Design, Corporate Invitations,
+					In addition to custom wedding stationery, <br> Little Red Tree also specialises in Graphic Design, Corporate Invitations,
 					Birth Announcement Cards, Christening and Birthday Invitations and also produces a range of handmade children’s 
 					homeware and accessories.					</p> 
 			</div>
@@ -89,7 +122,7 @@
 						classic and traditional, elegant or modern. </p> 
 				<p class="text">Here at Little Red Tree, we are very passionate about what we do. We have always been fascinated by all things paper 
 						and design and we strive to create unique wedding stationery which will leave a lasting first impression on your wedding 
-						guests. Our invitations are beautifully handmade with love and attention to detail, using the finest quality papers and material. </p>
+						guests. <br> Our invitations are beautifully handmade with love and attention to detail, using the finest quality papers and material. </p>
 		</div>
 		</div>
 			<div class="row-fluid"> 
@@ -130,7 +163,7 @@
 				     	and unique accessories for children’s interiors.  </p> 
 			     <p class="text">Our exclusive collection are all individually handmade using a selection of 
 						modern, vintage and classic fabrics. Our aim is to create products that are very unique and distinctive and will be loved not
-						only by the little ones but also appeal to the adults. They are perfect for that special little gift or for adding a personal 
+						only by the little ones but also appeal to the adults. <br> They are perfect for that special little gift or for adding a personal 
 						touch to a child’s bedroom or playroom. <br><br>
 						
 						<span id="red">Alphabet Pillows</span>
@@ -157,7 +190,7 @@
 						 white satin ribbon.
 						 <br>
 						<span id="red">Hot Air Balloon Mobiles</span>
-						 come in two sizes. Small balloons are 27cm in height, from top of balloon to bottom of basket and 20cm wide. Large balloons are ?
+						 come in two sizes. Small balloons are 27cm in height, from top of balloon to bottom of basket and 20cm wide. Large balloons are 35cm in height and 28cm wide.
 				</p>
 			</div>
 			</div>	
@@ -265,7 +298,7 @@
 		    <p class="contact-heading">contact us</p>
 		</div>
 			
-		<div class="contact-text span4">
+		<div class="contact-text">
 			<p class="contact-text-bold">For a personal consultation to discuss custom wedding stationery, for information on any of our handmade products
 					or to place an order, please contact Pina on 0419 308 592 or alternatively send us an email.</p>
 			<p class="contact-text">Please note that we are open by appointment only!</p>
@@ -396,7 +429,7 @@
 		
 		
 		// Any links with hash tags in them (can't do ^= because of fully qualified URL potential)
-		$('.navigation-bar').find('a[href*=#]').each(function() {
+		$('.navbar').find('a[href*=#]').each(function() {
 			// Ensure it's a same-page link
 			var thisPath = filterPath(this.pathname) || locationPath;
 			if (  locationPath == thisPath
@@ -452,5 +485,3 @@
 	</script>
 </body>
 </html>
-
-

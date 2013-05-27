@@ -1,16 +1,14 @@
+ 
 html,body{
-	float:none;
+	float: center;
 	margin:0 !important;
+	padding: 0;
     text-align:center !important;
     max-width: 100%;
-    max-height: 100%
+    overflow-x: hidden;
 }
 
 
-.background-white{
-	background-color: white;
-	z-index: 50;
-}
 
 
 
@@ -20,7 +18,7 @@ html,body{
 /*--------------------------------- Nav bar -----------------------------------
  ------------------------------------------------------------------------------*/    
 
-.navigation-bar{
+/*.navigation-bar{
 	position: fixed;
 	z-index: 100;
 	background-color: #E30421;
@@ -66,15 +64,11 @@ html,body{
 	text-decoration: none;
 }
 
-.logo{
-	padding-top: 1em;
-}
-
-.logo img{
-	max-height: 7em;
-}
 
 
+
+
+*/
 
 
 
@@ -277,8 +271,8 @@ html,body{
 	line-height: normal;
 	text-align: left;
 	font-weight: bold;
-	margin-left: -1.5em;
-}
+	padding-left: .2em;
+	padding-right: .2em;}
 
 .contact-text{
 	font-family:'Abel', sans-serif;
@@ -286,7 +280,11 @@ html,body{
 	color: #404041;
 	line-height: normal;
 	text-align: left;
-	margin-left: -1.5em;
+	display: block;
+	width: 100%;
+	padding-left: .2em;
+	padding-right: .2em;
+	padding-bottom: 1em;
 
 }
 
@@ -297,7 +295,8 @@ html,body{
 	line-height: normal;
 	text-align: left;
 	font-weight: bold;
-	margin-left: -1.5em;
+	padding-left: .2em;
+	padding-right: .2em;
 }
 
 .pricelist a:hover{
@@ -315,8 +314,8 @@ html,body{
 	text-align: center;
 	list-style: none;
 	padding: 0 !important;
-	width: 100%;
 	vertical-align: baseline;
+	margin: 0;	
 }
 
 .contact-buttons li{
@@ -329,15 +328,15 @@ html,body{
 }
 
 #phone{
-	padding: 1em 2em 2em 2em;
+	padding: 1em 3em 2em 3em;
 }
 
 #facebook{
-	padding: 1em 2em 2em 2em;
+	padding: 1em 3em 2em 3em;
 }
 
 #stockists{
-	padding: 1em 2em 2em 2em;
+	padding: 1em 3em 2em 3em;
 }
 
 .contact-buttons a{
@@ -455,9 +454,10 @@ i.ss-icon{
  .footer{
 	height: 20%;
 	background-color: #E30421;
-	width: 100%;
-	text-align: center;
+	text-align: justify;
 	padding-top: 1em;
+	padding-left: 4em;
+	padding-right: 4em;
 }
 
 .footer-text{
@@ -465,13 +465,14 @@ i.ss-icon{
 	margin-top: 6px;
 	font-size: 14px; 
 	color: white;
+	float: left;	
 }
 
 .aurora{
-	padding-left: 60em;
 	color: white;
 	font-family:'Abel', sans-serif;
 	font-size: 14px;
+	float: right;
 }
 	
 .aurora a{
@@ -561,8 +562,294 @@ i.ss-icon{
   border: none;
   outline: none;
 }
+
+
+
+
+.navbar .container{
+  width: 100%;
+  display: block;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.navbar {
+  *position: relative;
+  *z-index: 100;
+  max-width: 100%;
+}
+
+.navbar .nav {
+  float: left;
+  padding-top: 4em;
+}
+
+.navbar-inner {
+  min-height: 40px;
+  background-color: #E30421;
+  background-image: none;
+  border-color: none;
+  text-align: center;
+  padding-top: 1em;
+  box-shadow: none;
+}
+
+.brand {
+  display: inline-block;
+  background: url('img/white-logo.png') no-repeat;
+  background-size: 14em;
+  width: 14em;
+  height: 5em;
+  float: right !important;
+  margin: 0;
+  padding-right: 5em;
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.navbar .brand {
+ padding: 0;
+} 
+  
+.navbar-inverse .navbar-inner {
+  background-color: #E30421;
+  background-image: none;
+  border-color: none;
+  border-bottom: 3px solid white;
+}
+
+.navbar-inverse .brand,
+.navbar-inverse .nav > li > a {
+  color: white;
+  text-shadow: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  float: center;
+}
+
+.navbar .nav > li > a {
+  padding: 10px 40px 10px;
+}
+
+.navbar-inverse 
+.navbar-inverse .nav > li {
+  float: left;
+  display:inline-block;
+  *display:inline;
+  vertical-align: bottom;
+  margin:0 auto;
+
+}
+
+.navbar-inverse .brand:hover,
+.navbar-inverse .nav > li > a:hover {
+  color: #404041;
+}
+
+.navbar-inverse .nav > li > a:focus,
+.navbar-inverse .nav > li > a:hover {
+  color: #404041;
+  background-color: transparent;
+}
+
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus {
+  color: #404041;
+  background-color: transparent;
+}
+
+
+.navbar .btn-navbar{
+	background: white;
+	background-image: none;
+	color: #E30421;
+	box-shadow: none;
+	text-shadow: none;
+	margin-top: 0em;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.navbar .btn-navbar:hover{
+	background: #404041;
+	color: white;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+	.navbar-fixed-top{
+		margin-bottom: 0;
+	}
+	.navbar-fixed-top, .navbar-fixed-bottom {
+		position: fixed;	
+	}
+	.brand{
+		float: left !important; 
+	}
+	.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
+		color: white;
+	}
+	
+	.nav-collapse{
+		text-align: right;
+		float:	right;	
+	}
+
+	.nav-collapse .nav > li > a, 
+	.nav-collapse .dropdown-menu a {
+		margin: 0;
+		padding-right: 0;
+		padding-left: 0;
+		padding-top:.2em;
+		padding-bottom: .2em;
+		font-family: 'Raleway', sans-serif;
+		font-size: 14px;
+	    font-weight: 100;	
+	}
+	
+	.navbar-inverse .nav-collapse .nav > li > a:hover,
+	.navbar-inverse .nav-collapse .dropdown-menu a:hover {
+	    background-color: transparent;
+	    color: #404041;
+	}
+}
+
+
+@media (max-width: 767px){
+		html,body{ 
+	  padding-left: .5em;
+	  padding-right: .5em;
+    }
  
+	.navbar {
+	    margin-left: auto;
+	    margin-right: auto;
+  	}
+  	
+  	.navbar .btn-navbar{
+	  	float: right;
+	  	margin-top: 0em;
+}
+	.navbar-fixed-top{
+		margin-bottom: 0;
+	}
+	.navbar-fixed-top, .navbar-fixed-bottom {
+		position: fixed;	
+	}
+
+	.navbar .brand{
+		padding-right: 2em;
+	}
+	.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
+		color: white;
+		padding-right: 2em;
+
+	}
+	
+	.nav-collapse{
+		text-align: right;
+		float:	right;	
+	}
+
+	.nav-collapse .nav > li > a, 
+	.nav-collapse .dropdown-menu a {
+		margin: 0;
+		padding-right: 0;
+		padding-left: 0;
+		padding-top:.2em;
+		padding-bottom: .2em;
+		font-family: 'Raleway', sans-serif;
+		font-size: 14px;
+	    font-weight: 100;	
+	}
+	
+	.navbar-inverse .nav-collapse .nav > li > a:hover,
+	.navbar-inverse .nav-collapse .dropdown-menu a:hover {
+	    background-color: transparent;
+	    color: #404041;
+	}
+	
+}
+
+
+
+
+
+
+@media (max-width: 480px){
+	html,body{ 
+	  padding-left: .5em;
+	  padding-right: .5em;
+    }
  
- 
- 
- 
+	.navbar {
+	    margin-left: auto;
+	    margin-right: auto;
+  	}
+  	
+  	.navbar .container{
+	  	padding-left: 2em;
+	  	padding-right: 2em;
+  	}
+  	
+  	.navbar .btn-navbar{
+	  	float: right;
+	  	margin-top: 0em;
+	}
+	
+	.navbar-fixed-top{
+		margin-bottom: 0;
+	}
+	
+	
+	.navbar .brand{
+		padding-left: 0em;
+	}
+	.navbar-fixed-top, .navbar-fixed-bottom {
+		position: fixed;	
+	}
+	
+	.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
+		color: white;
+		padding-right: 2em;
+	}
+	
+	.nav-collapse{
+		text-align: right;
+		float:	right;	
+	}
+
+	.nav-collapse .nav > li > a, 
+	.nav-collapse .dropdown-menu a {
+		margin: 0;
+		padding-right: 0;
+		padding-left: 0;
+		padding-top:.2em;
+		padding-bottom: .2em;
+		font-family: 'Raleway', sans-serif;
+		font-size: 14px;
+	    font-weight: 100;	
+	}
+	
+	.navbar-inverse .nav-collapse .nav > li > a:hover,
+	.navbar-inverse .nav-collapse .dropdown-menu a:hover {
+	    background-color: transparent;
+	    color: #404041;
+	}
+
+} 
+/* Landscape phones and down */
