@@ -11,67 +11,6 @@ html,body{
 
 
 
-
-
-
-
-/*--------------------------------- Nav bar -----------------------------------
- ------------------------------------------------------------------------------*/    
-
-/*.navigation-bar{
-	position: fixed;
-	z-index: 100;
-	background-color: #E30421;
-	display: block;
-	text-align: center;
-	border-bottom: 3px solid white;
-	padding-top: 1em; 	
-}
-	
-.navigation-menu{
-	width: 100%;
-}
-
-.navigation-list ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.navigation-list li{
-	display: inline-block; 
-    vertical-align: bottom;
-    bottom: 0;
-}
-
-.navigation-list li a{
-	font-family: 'Raleway', sans-serif;
-	font-size: 17px;
-	color: white;
-	font-weight: 100;
-	padding-left: 5em;
-	display: block;
-	line-height: 2.5em;
-	 -webkit-transition: all .5s ease;
-	 -moz-transition: all .5s ease;
-	 -o-transition: all .5s ease;
-	 -ms-transition: all .5s ease;
-	 transition: all .5s ease;
-}
-
-.navigation-list a:hover{
-	color: #404041;
-	text-decoration: none;
-}
-
-
-
-
-
-*/
-
-
-
 /*--------------------------------- About -------------------------------------
  ------------------------------------------------------------------------------*/   
 
@@ -82,7 +21,6 @@ html,body{
 .about-image{
 	max-width: 100%;
 }
-
 
 .about-text-bold{
 	font-family:'Abel', sans-serif;
@@ -217,7 +155,6 @@ html,body{
 
 
 
-
 /*--------------------------------- Graphic Design ----------------------------
  -----------------------------------------------------------------------------*/
 
@@ -252,6 +189,7 @@ html,body{
 	display: block;
 	padding-top: 1em;
 	padding-bottom: 4em;
+	margin: 0;
 }
 
 .contact-heading{
@@ -272,7 +210,8 @@ html,body{
 	text-align: left;
 	font-weight: bold;
 	padding-left: .2em;
-	padding-right: .2em;}
+	padding-right: .2em;
+}
 
 .contact-text{
 	font-family:'Abel', sans-serif;
@@ -285,7 +224,7 @@ html,body{
 	padding-left: .2em;
 	padding-right: .2em;
 	padding-bottom: 1em;
-
+	margin-left: 0 !important;
 }
 
 .pricelist a{
@@ -402,7 +341,7 @@ i.ss-icon{
 .modal-body{
 	padding: 0;
 	overflow-y: hidden;
-	left:0;
+	left: 0;
 	max-height: 50em;
 }
 
@@ -450,7 +389,7 @@ i.ss-icon{
 }
 
 
-}
+
 
 /*--------------------------------- Footer -----------------------------------
  -----------------------------------------------------------------------------*/
@@ -566,6 +505,7 @@ i.ss-icon{
   border: none;
   outline: none;
 }
+
 
 
 
@@ -822,7 +762,8 @@ i.ss-icon{
 
 
 
-
+/*---------------------------- Responsive Additions ---------------------------
+ -----------------------------------------------------------------------------*/
 
 
 @media (max-width: 480px){
@@ -854,6 +795,7 @@ i.ss-icon{
 	.navbar .brand{
 		padding-left: 0em;
 	}
+	
 	.navbar-fixed-top, .navbar-fixed-bottom {
 		position: fixed;	
 	}
@@ -886,38 +828,39 @@ i.ss-icon{
 	    color: #404041;
 	}
 	.footer{
-	height: 4em;
-	padding-top: 1em;
-	padding-left: 2em;
-	padding-right: 2em;
-	text-align: center;
+		height: 4em;
+		padding-top: 1em;
+		padding-left: 2em;
+		padding-right: 2em;
+		text-align: center;
 	}
+	
+	.modal{
+	    width: 300px;
+	    margin-left: -310px;
+    }
 } 
 
 
 
 
 @media (min-width: 1200px) { 
-.modal{
-    width: 1000px;
-    margin-left: -500px;}
- }
+	.modal{
+    	width: 1000px;
+		margin-left: -500px;
+	}
+}
  
-/* Portrait tablet to landscape and desktop */
 @media (max-width: 979px) { 
-.modal{
-    width: 700px;
-    left: 110px;}
- }
-/* Landscape phone to portrait tablet */
+	.modal{
+	    width: 700px;
+	    left: 110px;
+	}
+}
+
 @media (max-width: 767px) { 
-.modal{
-    width: 550px;
-    margin-left: -225px;}   
- }
-/* Landscape phones and down */
-@media (max-width: 480px) { 
-.modal{
-    width: 300px;
-    margin-left: -310px;}
- }
+	.modal{
+	    width: 650px;
+	    margin-left: -485px;
+	}   
+}
