@@ -1,6 +1,7 @@
  
 html,body{
-	float: center;
+
+    float: center;
 	margin:0 !important;
 	padding: 0;
     text-align:center !important;
@@ -271,7 +272,7 @@ html,body{
 }
 
 #facebook{
-	padding: 1em 3em 2em 3em;
+	padding: 0;
 }
 
 #stockists{
@@ -337,7 +338,11 @@ i.ss-icon{
  -----------------------------------------------------------------------------*/
 
 
-
+.modal{
+	width: 1000px;
+	margin-left:  -500px;
+}
+	
 .modal-body{
 	padding: 0;
 	overflow-y: hidden;
@@ -351,7 +356,11 @@ i.ss-icon{
 
 .carousel-caption{
 	background: #E30421;
-	height: 20px;
+	height: 5px;
+}
+
+.carousel-inner .item img {
+    padding-bottom: 2em;
 }
 
 .carousel-text{
@@ -363,6 +372,9 @@ i.ss-icon{
 	text-align: right;
 }
 
+.carousel-caption h4, .carousel-caption p {
+    line-height: 7px !important;
+}
 .btn{
 	vertical-align: bottom;
 }
@@ -388,7 +400,9 @@ i.ss-icon{
 	opacity: 10;
 }
 
-
+.modal.fade.in{
+	top: 5%;
+}
 
 
 /*--------------------------------- Footer -----------------------------------
@@ -513,8 +527,8 @@ i.ss-icon{
 .navbar .container{
   width: 100%;
   display: block;
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 .navbar {
@@ -568,7 +582,7 @@ i.ss-icon{
   color: white;
   text-shadow: none;
   font-family: 'Raleway', sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 100;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
@@ -579,7 +593,7 @@ i.ss-icon{
 }
 
 .navbar .nav > li > a {
-  padding: 10px 40px 10px;
+  padding: 1px 27px 10px;
 }
 
 .navbar-inverse 
@@ -632,7 +646,10 @@ i.ss-icon{
 
 
 
-
+/*---------------------------- Responsive Additions ---------------------------
+ -----------------------------------------------------------------------------*/
+ 
+ 
 @media (min-width: 768px) and (max-width: 979px) {
 
 	.navbar-fixed-top{
@@ -671,26 +688,26 @@ i.ss-icon{
 	    color: #404041;
 	}
 	
-	 .footer{
-	height: 4em;
-	padding-top: 1em;
-	padding-left: 2em;
-	padding-right: 2em;
+	.footer{
+		height: 4em;
+		padding-top: 1em;
+		padding-left: 2em;
+		padding-right: 2em;
 	}
 	
-		.modal.fade{
-		margin: 0;
-		padding: 0;
-     position: absolute;
-     top: 50%;
-     max-width:550px;
-     text-align:center;
+	.modal.fade{
+	     top: 50%;
+	     text-align:center;
 	 }
+	 	.modal{
+	    width: 650px;
+	    margin-left: -325px;
+	}  
 }
 
 
 @media (max-width: 767px){
-		html,body{ 
+	html,body{ 
 	  padding-left: .5em;
 	  padding-right: .5em;
     }
@@ -698,6 +715,13 @@ i.ss-icon{
 	.navbar {
 	    margin-left: auto;
 	    margin-right: auto;
+  	}
+  	
+  	.navbar .container{
+	  	padding-left: .5em !important;
+	  	padding-right: .5em !important;
+	  	margin:0 !important;
+	  	float: right !important;
   	}
   	
   	.navbar .btn-navbar{
@@ -744,26 +768,17 @@ i.ss-icon{
 	}
 	
 	.footer{
-	height: 4em;
-	padding-top: 1em;
-	padding-left: 2em;
-	padding-right: 2em;
-	text-align: center;
-	}
+		height: 4em;
+		padding-top: 1em;
+		padding-left: 2em;
+		padding-right: 2em;
+		text-align: center;
+	} 
 	
-	.modal.fade{
-     position: absolute;
-     left: 100%;
-     top: 39%;
-     max-width:400px;
-     text-align:center;
-	 }
+ 
 }
+	
 
-
-
-/*---------------------------- Responsive Additions ---------------------------
- -----------------------------------------------------------------------------*/
 
 
 @media (max-width: 480px){
@@ -778,8 +793,10 @@ i.ss-icon{
   	}
   	
   	.navbar .container{
-	  	padding-left: 2em;
-	  	padding-right: 2em;
+	  	padding-left: .5em !important;
+	  	padding-right: .5em !important;
+	  	margin:0 !important;
+	  	float: right !important;
   	}
   	
   	.navbar .btn-navbar{
@@ -836,8 +853,7 @@ i.ss-icon{
 	}
 	
 	.modal{
-	    width: 300px;
-	    margin-left: -310px;
+		visibility: hidden;
     }
 } 
 
@@ -854,13 +870,8 @@ i.ss-icon{
 @media (max-width: 979px) { 
 	.modal{
 	    width: 700px;
-	    left: 110px;
+	    left: 360px;
 	}
 }
 
-@media (max-width: 767px) { 
-	.modal{
-	    width: 650px;
-	    margin-left: -485px;
-	}   
-}
+
