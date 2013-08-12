@@ -1,10 +1,6 @@
  
 html,body{
-
-    float: center;
 	margin:0 !important;
-	padding: 0;
-    text-align:center !important;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -15,29 +11,16 @@ html,body{
 /*--------------------------------- About -------------------------------------
  ------------------------------------------------------------------------------*/   
 
-.about{
-	padding-top: 4em;
+#one{
+	padding-bottom: 4em;
 }
 
 .about-image{
 	max-width: 100%;
 }
 
-.about-text-bold{
-	font-family:'Abel', sans-serif;
-	font-size: 20px;
-	color: #404041;
-	line-height: normal;
-	text-align: left;
-	font-weight: bold;
-}
 
 .about-text{
-	font-family:'Abel', sans-serif;
-	font-size: 17px;
-	color: #404041;
-	line-height: normal;
-	text-align: left;
 	padding-left: .2em;
 	padding-right: .2em;
 }
@@ -46,10 +29,9 @@ html,body{
 	font-family:'Homemade Apple', cursive;
 	font-size: 35px;
 	color: #E30421;
-	line-height: normal;
+	line-height: 35px;;
 	padding-top: 1.4em;
 	font-weight: 200;
-	text-align: left;
 }
 
 .text-bold{
@@ -57,7 +39,6 @@ html,body{
 	font-size: 20px;
 	color: #404041;
 	line-height: normal;
-	text-align: left;
 	font-weight: bold;
 }
 
@@ -66,7 +47,6 @@ html,body{
 	font-size: 17px;
 	color: #404041;
 	line-height: normal;
-	text-align: left;
 }
 
 #red{
@@ -78,8 +58,8 @@ html,body{
 /*----------------------------------- Products ----------------------------------
  ------------------------------------------------------------------------------*/ 
 
-.products{
-	padding-top: 4em;
+#two{
+	padding-bottom: 2.5em;
 }
 
 .products-image{
@@ -88,8 +68,6 @@ html,body{
 }
 
 .invitations{
-	display: block;
-    text-align: left !important;
     padding-left: .2em;
 	padding-right: .2em;
 }
@@ -101,8 +79,6 @@ html,body{
 }
 
 .products-text{
-	display: block;
-	text-align: left;
 	padding-left: .2em;
 	padding-right: .2em;	
 }
@@ -126,8 +102,6 @@ html,body{
 }
 
 .handmade{
-	display: block;
-    text-align: left !important;
     padding-top: 3em;
     padding-left: .2em;
 	padding-right: .2em;
@@ -136,9 +110,6 @@ html,body{
 .handmade-menu{
 	text-align: left !important;
 	list-style-type: none;
-}
-
-.handmade-menu{
 	padding-bottom: 1.5em;
 	padding-top: 1em;
 }
@@ -154,15 +125,11 @@ html,body{
 
 
 
-
-
 /*--------------------------------- Graphic Design ----------------------------
  -----------------------------------------------------------------------------*/
 
-.graphic-design{
-	padding-top: 4em;
-	display: block;
-    border-bottom: 3px solid #E30421;
+#three{
+	padding-bottom: 4em;
 }
 
 .graphic-design-image{
@@ -170,13 +137,9 @@ html,body{
 	max-width: 100%;
 }
 
-.graphic-design-text{
-	display: block;
-	width: 100%;
-	text-align: left;	
+.graphic-design-text{	
 	padding-left: .2em;
 	padding-right: .2em;
-	padding-bottom: 4em;
 }
 
 
@@ -185,47 +148,23 @@ html,body{
 
 /*--------------------------------- Contact -----------------------------------
  -----------------------------------------------------------------------------*/
- 
+
+#four{
+    padding-bottom: 4em;
+}
 .contact{
-	display: block;
-	padding-top: 1em;
-	padding-bottom: 4em;
-	margin: 0;
+    border-top: 3px solid #E30421;
 }
 
-.contact-heading{
-	font-family:'Homemade Apple', cursive;
-	font-size: 35px;
-	color: #E30421;
-	line-height: normal;
-	padding-top: 1.4em;
-	font-weight: 200;
-	text-align: left;
-}
-
-.contact-text-bold{
-	font-family:'Abel', sans-serif;
-	font-size: 20px;
-	color: #404041;
-	line-height: normal;
-	text-align: left;
-	font-weight: bold;
-	padding-left: .2em;
-	padding-right: .2em;
-}
-
-.contact-text{
+.text{
 	font-family:'Abel', sans-serif;
 	font-size: 17px;
 	color: #404041;
 	line-height: normal;
-	text-align: left;
-	display: block;
 	width: 100%;
-	padding-left: .2em;
-	padding-right: .2em;
-	padding-bottom: 1em;
 	margin-left: 0 !important;
+    padding-left: .2em;
+	padding-right: .2em;
 }
 
 .pricelist a{
@@ -233,10 +172,7 @@ html,body{
 	font-size: 20px;
 	color: #E30421;
 	line-height: normal;
-	text-align: left;
 	font-weight: bold;
-	padding-left: .2em;
-	padding-right: .2em;
 }
 
 .pricelist a:hover{
@@ -255,7 +191,7 @@ html,body{
 	list-style: none;
 	padding: 0 !important;
 	vertical-align: baseline;
-	margin: 0;	
+	margin-left: 0;	
 }
 
 .contact-buttons li{
@@ -264,11 +200,11 @@ html,body{
 }
 
 #email{
-	padding: 2em 0 2em 0;
+	padding: 0;
 }
 
 #phone{
-	padding: 1em 3em 2em 3em;
+	padding: 0;
 }
 
 #facebook{
@@ -276,13 +212,13 @@ html,body{
 }
 
 #stockists{
-	padding: 1em 3em 2em 3em;
+	padding: 0;
 }
 
 .contact-buttons a{
-	border-radius: 6em;
-	width: 6em;
-	height: 6em;
+	border-radius: 5em;
+	width: 5em;
+	height: 5em;
 	background-color: #E30421;
 	display: inline-block;
 	text-align: center;
@@ -308,29 +244,10 @@ html,body{
 
 i.ss-icon{
 	color: white;
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
-	line-height: 95px;
+	line-height: 78px;
 }
-
-.stockists{
-	display: inline;
-	width: 100%;
-    text-align: center !important;
-}	
-
-.stockists ul{
-	text-align: center;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	margin-left: 0 !important;
-}
-
-.stockists li{
-    text-align: center;
-}
-
 
 
 
@@ -405,9 +322,11 @@ i.ss-icon{
 }
 
 
+
 /*--------------------------------- Footer -----------------------------------
  -----------------------------------------------------------------------------*/
- .footer{
+
+.footer{
 	height: 20%;
 	background-color: #E30421;
 	text-align: justify;
@@ -442,53 +361,60 @@ i.ss-icon{
 }
 
 
+
 /*---------------------------- Boostrap CSS Overides ---------------------------
  -----------------------------------------------------------------------------*/
  
- 
 .btn {
-  *display: inline;
-  display: block;
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  background-color: white;
-  background-image: none;
-  padding: 0;
-  margin: 0;
-  text-shadow: 0;
-  box-shadow: none;
-  border-bottom-color: none;
-  webkit-box-shadow: none;
-  -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  -o-transition: all 2s ease;
-  -ms-transition: all 2s ease;
-  transition: all 2s ease;
+    *display: inline;
+    display: block;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: white;
+    background-image: none;
+    padding: 0;
+    margin: 0;
+    text-shadow: 0;
+    box-shadow: none;
+    border-bottom-color: none;
+    webkit-box-shadow: none;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
 }
 
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    padding: 2px 6px 3px;
+    border: 2px outset buttonface;
+}
 
 .btn:hover,
 .btn:active,
 .btn.active,
 .btn.disabled,
 .btn[disabled] {
-  outline: none;
-  -webkit-filter: opacity(.65);
-  -moz-filter: opacity(.65);
-  -o-transition-filter: opacity(.65);
-  -ms-transition-filter: opacity(.65);
-  transition-filter: opacity(.65);
-  opacity: .65;
+    outline: none;
+    -webkit-filter: opacity(.65);
+    -moz-filter: opacity(.65);
+    -o-transition-filter: opacity(.65);
+    -ms-transition-filter: opacity(.65);
+    transition-filter: opacity(.65);
+    opacity: .65;
 }
  
 .btn:active,
 .btn.active {
-  border: none;
-  outline: none;
+    border: none;
+    outline: none;
 } 
  
 .btn:first-child {
@@ -520,10 +446,6 @@ i.ss-icon{
   outline: none;
 }
 
-
-
-
-
 .navbar .container{
   width: 100%;
   display: block;
@@ -538,8 +460,13 @@ i.ss-icon{
 }
 
 .navbar .nav {
-  float: left;
-  padding-top: 4em;
+    padding-top: 4em;
+    width: 100%;
+    position: relative;
+    left: 0;
+    display: block;
+    float: none;
+    margin: 0 10px 0 0;
 }
 
 .navbar-inner {
@@ -552,29 +479,24 @@ i.ss-icon{
   box-shadow: none;
 }
 
-.brand {
-  display: inline-block;
-  background: url('img/white-logo.png') no-repeat;
-  background-size: 14em;
-  width: 14em;
-  height: 5em;
+.brand{
   float: right !important;
-  margin: 0;
-  padding-right: 5em;
-  padding-top: 0;
-  padding-left: 0;
-  padding-bottom: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left;
 }
 
-.navbar .brand {
- padding: 0;
-} 
+.brand img {
+  max-width: 163px;
+  padding-top: 15px !important;
+}
   
 .navbar-inverse .navbar-inner {
   background-color: #E30421;
   background-image: none;
   border-color: none;
   border-bottom: 3px solid white;
+  padding-top: 10px;
 }
 
 .navbar-inverse .brand,
@@ -582,18 +504,16 @@ i.ss-icon{
   color: white;
   text-shadow: none;
   font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-  font-weight: 100;
+  font-size: 14px;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
   -ms-transition: all .5s ease;
   transition: all .5s ease;
-  float: center;
 }
 
 .navbar .nav > li > a {
-  padding: 1px 27px 10px;
+    padding: 1px 25px 10px;
 }
 
 .navbar-inverse 
@@ -603,6 +523,7 @@ i.ss-icon{
   *display:inline;
   vertical-align: bottom;
   margin:0 auto;
+  text-align: left;
 }
 
 .navbar-inverse .brand:hover,
@@ -623,14 +544,13 @@ i.ss-icon{
   background-color: transparent;
 }
 
-
 .navbar .btn-navbar{
 	background: white;
 	background-image: none;
 	color: #E30421;
 	box-shadow: none;
 	text-shadow: none;
-	margin-top: 0em;
+    padding: 13px 10px 0px 10px;
 	-webkit-transition: all .5s ease;
 	-moz-transition: all .5s ease;
 	-o-transition: all .5s ease;
@@ -649,8 +569,7 @@ i.ss-icon{
 /*---------------------------- Responsive Additions ---------------------------
  -----------------------------------------------------------------------------*/
  
- 
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 979px) {     
 
 	.navbar-fixed-top{
 		margin-bottom: 0;
@@ -667,7 +586,7 @@ i.ss-icon{
 	
 	.nav-collapse{
 		text-align: right;
-		float:	right;	
+		float:	right !important;	
 	}
 
 	.nav-collapse .nav > li > a, 
@@ -687,7 +606,12 @@ i.ss-icon{
 	    background-color: transparent;
 	    color: #404041;
 	}
+
+    .navbar .nav > li > a {
+        padding: 1px 15px 10px;
+    }
 	
+    
 	.footer{
 		height: 4em;
 		padding-top: 1em;
@@ -699,17 +623,23 @@ i.ss-icon{
 	     top: 50%;
 	     text-align:center;
 	 }
-	 	.modal{
+    
+    .modal{
 	    width: 650px;
 	    margin-left: -325px;
-	}  
+	} 
+
+    .contact-buttons p{
+        font-size: 75%;
+    }
 }
+
 
 
 @media (max-width: 767px){
 	html,body{ 
-	  padding-left: .5em;
-	  padding-right: .5em;
+	  padding-left: 3.5em;
+	  padding-right: 3.5em;
     }
  
 	.navbar {
@@ -726,11 +656,12 @@ i.ss-icon{
   	
   	.navbar .btn-navbar{
 	  	float: right;
-	  	margin-top: 0em;
-}
+	  	margin-top: 2em;
+    }
 	.navbar-fixed-top{
 		margin-bottom: 0;
 	}
+
 	.navbar-fixed-top, .navbar-fixed-bottom {
 		position: fixed;	
 	}
@@ -740,8 +671,7 @@ i.ss-icon{
 	}
 	.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
 		color: white;
-		padding-right: 2em;
-
+		padding-right: .5em;
 	}
 	
 	.nav-collapse{
@@ -769,16 +699,16 @@ i.ss-icon{
 	
 	.footer{
 		height: 4em;
-		padding-top: 1em;
+		padding-top: 0em;
 		padding-left: 2em;
 		padding-right: 2em;
-		text-align: center;
 	} 
-	
- 
+
+    .contact-buttons li{
+       padding-top:3px;
+    }
 }
 	
-
 
 
 @media (max-width: 480px){
@@ -787,21 +717,25 @@ i.ss-icon{
 	  padding-right: .5em;
     }
  
-	.navbar {
+	.inner navbar{
+        padding-top: 0px;
+    }
+
+    .navbar {
 	    margin-left: auto;
 	    margin-right: auto;
   	}
   	
   	.navbar .container{
-	  	padding-left: .5em !important;
-	  	padding-right: .5em !important;
+	  	padding-left: 1em !important;
+	  	padding-right: 1em !important;
 	  	margin:0 !important;
 	  	float: right !important;
   	}
   	
   	.navbar .btn-navbar{
 	  	float: right;
-	  	margin-top: 0em;
+	  	margin-top: 2em;
 	}
 	
 	.navbar-fixed-top{
@@ -810,7 +744,7 @@ i.ss-icon{
 	
 	
 	.navbar .brand{
-		padding-left: 0em;
+        float:none !important;
 	}
 	
 	.navbar-fixed-top, .navbar-fixed-bottom {
@@ -819,7 +753,7 @@ i.ss-icon{
 	
 	.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
 		color: white;
-		padding-right: 2em;
+		padding-right: .5em;
 	}
 	
 	.nav-collapse{
@@ -844,19 +778,19 @@ i.ss-icon{
 	    background-color: transparent;
 	    color: #404041;
 	}
-	.footer{
-		height: 4em;
-		padding-top: 1em;
-		padding-left: 2em;
-		padding-right: 2em;
-		text-align: center;
-	}
+
+    .navbar .nav{
+        padding-top: 2em;
+    }
 	
 	.modal{
 		visibility: hidden;
     }
-} 
 
+    #one{
+        padding-top: 70px !important;
+    }
+} 
 
 
 
@@ -867,6 +801,8 @@ i.ss-icon{
 	}
 }
  
+
+
 @media (max-width: 979px) { 
 	.modal{
 	    width: 700px;
