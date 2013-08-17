@@ -808,6 +808,17 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 	    width: 700px;
 	    left: 360px;
 	}
+
+    .contact-buttons a{
+		border-radius: 4em;
+		width: 4em;
+		height: 4em;
+	}
+
+	i.ss-icon{
+		font-size: 25px;
+		line-height: 63px;
+	}
 }
 
 
