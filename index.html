@@ -402,14 +402,14 @@
 			        <div class="carousel-inner">
 			         
 				          <div class="item active">
-				              <img src= "img/birthday/1.jpg" data-src="img/birthday/1.jpg"/>
+				              <img src="img/birthday/1.jpg" data-src="img/birthday/1.jpg"/>
                                 <div class="carousel-caption">
                                     <p class="carousel-text">birthday invite 1</p>
-				                </div>				   
+				                </div>
 				          </div>
 				         
 				          <div class="item">
-				              <img data-src="img/birthday/2.jpg"/>
+				              <img  data-src="img/birthday/2.jpg"/>
                                 <div class="carousel-caption">
                                     <p class="carousel-text">birthday invite 2</p>
 				                </div>	
@@ -1066,14 +1066,16 @@
 		} 	
 
 
-$("#this-carousel-id-birthday").bind("slid", function(){
-    var $img = $(".active img", this);
-    if ($img.attr('src')) return;
-    $img.hide();
-    $img.attr("src", $img.attr('data-src'));
-    $img.load(function() {
-       $img.fadeIn(2000);
-    });
+$('#birthday').on('show', function(){
+    var $nextImage = $('.carousel', this).find('.active.item').next('.item').find('img');
+    if ($nextImage.attr('src')) return
+    $nextImage.attr("src", $nextImage.attr('data-src'));
+});
+
+$("#this-carousel-id-birthday").on("slid", function(){
+    var $nextImage = $('.active.item', this).next('.item').find('img');
+    if ($nextImage.attr('src')) return
+    $nextImage.attr("src", $nextImage.attr('data-src'));
 });
 
 
