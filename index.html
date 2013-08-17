@@ -1067,9 +1067,13 @@
 
 
 $("#this-carousel-id-birthday").bind("slid", function(){
-
     var $img = $(".active img", this);
+    if ($img.attr('src')) return;
+    $img.hide();
     $img.attr("src", $img.attr('data-src'));
+    $img.load(function() {
+       $img.show();
+    });
 });
 
 

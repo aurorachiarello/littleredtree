@@ -265,6 +265,7 @@ i.ss-icon{
 	overflow-y: hidden;
 	left: 0;
 	max-height: 50em;
+    min-height: 50em;
 }
 
 .modal-header{
