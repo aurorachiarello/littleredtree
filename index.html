@@ -1159,42 +1159,30 @@
 		var scrollElem = $('html');
 		if($.browser.safari || $.browser.chrome) {
 			scrollElem = $("body");
-		} 	
+    } 	
 
-
-
-        // capture the show event on div's with .modal class
-        $('div.modal').on('show', function(e){
-            var div = $(this);
-
-            // hide the div
-            div.hide();
-
-            // create an array
-            var deferreds = [];
-
-            // get all the imgs in the carousel inside of the div
-            var $imgs = $('.carousel', this).find('img');
-
-            // loop over each img
-            $imgs.each(function(){
-                var self = $(this);
-                if (!self.attr('src')) {
-                    var p = $.Deferred();
-                    deferreds.push(p);
-                    self.one('load', function(){
-                        p.resolve();
-                    });
-                    self.attr("src", self.attr('data-src'));
-                }
-            });
-
-            $.when.apply($, deferreds).done(function(){
-                div.slideDown("1000");
-            });
+    $('div.modal').on('show', function(e){
+        <!--// capture the show event on div's with .modal class-->
+        var carousel = $(this).find('.carousel').hide();
+        var deferreds = [];
+        var imgs = $('.carousel', this).find('img');
+        // loop over each img
+        imgs.each(function(){
+            var self = $(this);
+            var datasrc = self.attr('data-src');
+            if (datasrc) {
+                var d = $.Deferred();
+                self.one('load', d.resolve)
+                    .attr("src", datasrc)
+                    .attr('data-src', '');
+                deferreds.push(d.promise());
+            }
         });
 
-
+        $.when.apply($, deferreds).done(function(){
+            carousel.slideDown(1000);
+        });
+    });
 
 		
 		
