@@ -1,0 +1,94 @@
+<html>
+  <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link href="bootstrap.css" rel="stylesheet"> 
+      <link href="bootstrap-responsive.css" rel="stylesheet"> 
+      <link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
+      <link type="text/css" rel="stylesheet" href="stylesheet.css"/>	
+      <link href="webfonts/ss-social-regular.css" rel="stylesheet"/>
+
+
+  <title>Template Test</title>
+  </head>
+    <body>
+
+        <div>
+            <a href="#fabrics" role="button" class="btn" data-toggle="modal">
+            <img src="img/fabrics.jpg">
+            <p class="category">FABRIC SELECTION</p></a>
+        </div>
+
+        <div id='fabrics-content'></div>
+        <script id='fabrics-template' type='text/x-handlebars-template'>
+
+            <div id="fabrics" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <p class="modal-heading" id="myModalLabel">fabric selection</p>
+                </div>
+
+                <div class="modal-body">
+                  <div id="this-carousel-id-fabrics" class="carousel slide">
+                    <div class="carousel-inner">
+                      {{#each fabrics}}
+                          {{#if @index}}
+                          <div class="item">
+                          {{else}}
+                          <div class="item active">
+                          {{/if}}
+                              <img src="/img/fabrics/{{this}}"/>
+                              <div class="carousel-caption">
+                                  <p class="carousel-text">babushka russian dolls</p>
+                              </div>
+                          </div>
+                          {{/each}}
+                    </div>
+                  </div>
+                  <a class="carousel-control left" href="#fabrics-content" data-slide="prev">&lsaquo;</a>
+                  <a class="carousel-control right" href="#fabrics-content" data-slide="next">&rsaquo;</a>
+                </div>
+            </div>
+        </script>
+
+        <script src="assets/js/jquery.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
+        <script>
+            var fabrics = [
+              'babushka-russian-dolls.jpg',
+              'bikes-and-scooters.jpg',
+              'blue-stripe.jpg',
+              'china-kids.jpg',
+              'cute-safari-animals.jpg',
+              'grey-stripe.jpg',
+              'lil-cowpokes.jpg',
+              'little-red-riding-hood.jpg',
+              'my-paper-plane.jpg',
+              'navy-blue-small-dot.jpg',
+              'pink-dot.jpg',
+              'pink-starling.jpg',
+              'pink-stripe.jpg',
+              'pink-umbrellas.jpg',
+              'red-lotus.jpg',
+              'red-small-dot.jpg',
+              'small-red-flower.jpg',
+              'sunspots-mint.jpg',
+              'zig-zag-sweet.jpg'
+            ];
+
+            var source   = $("#fabrics-template").html();
+            var template = Handlebars.compile(source);
+
+            $(document).ready(function() {
+              var data = {'fabrics': fabrics};
+              $("#fabrics-content").html(template(data));
+            });
+        </script>
+    </body>
+</html>
