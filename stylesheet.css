@@ -173,6 +173,7 @@ html,body{
 	color: #E30421;
 	line-height: normal;
 	font-weight: bold;
+	text-align: left;
 }
 
 .pricelist a:hover{

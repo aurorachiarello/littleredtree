@@ -288,15 +288,17 @@
 			<p class="text-bold">For a personal consultation to discuss custom wedding stationery, for information on any of our handmade products
 					or to place an order, please contact Pina on 0419 308 592 or alternatively send us an email.</p>
 			<p class="contact-text">Please note that we are open by appointment only!</p>
-			<p class="pricelist"> 
-				<a href =""> Handmade Pricelist</a>
-			</p>
+			<div class="pricelist"> 
+				<a href="#pricelist" role="button" class="btn" data-toggle="modal">  
+					<p> Handmade Pricelist </p>
+				</a>
+			</div>
 		</div>
 		
 		<div class="contact-buttons span6">
 			<ul>
 				<li id="email" class="span3">
-					<a href="mailto:info@littleredtree.com.au"> <i class="ss-icon"> &#x2709;</i> </a>
+					<a href="mailto:info@littleredtree.com.au" > <i class="ss-icon"> &#x2709;</i> </a>
 				    <p>EMAIL</p> 
 				</li>    
 	 	
@@ -306,7 +308,7 @@
 			    </li>    
 	 	
 			    <li id="pinterest" class="span3">
-					<a href="http://pinterest.com/pbuhagiar"> <i class="ss-icon"> &#xF650;</i></a>  
+					<a href="http://pinterest.com/pbuhagiar" target="_blank"> <i class="ss-icon"> &#xF650;</i></a>  
 					<p>PINTEREST</p> 	
 				</li>  
 				
@@ -328,7 +330,7 @@
  
  <div class="row-fluid">
  	<div class="footer span8 offset2">
-		<p>	<span class="footer-text">little red tree © 2009</span>	<span class="aurora"> designed & developed by <a href="http://www.aurorachiarello.com"> AURORA CHIARELLO</a></span> </p>
+		<p>	<span class="footer-text">little red tree © 2009</span>	<span class="aurora"> designed & developed by <a href="http://www.aurorachiarello.com" target="_blank"> AURORA CHIARELLO</a></span> </p>
 	</div>
  </div>
 
@@ -476,7 +478,14 @@
                                 <div class="carousel-caption">
                                     <p class="carousel-text">birthday invite 11</p>
 				                </div>	
-				          </div>                        
+				          </div>  
+
+                          <div class="item">
+				              <img data-src="img/birthday/12.jpg"/>
+                                <div class="carousel-caption">
+                                    <p class="carousel-text">birthday invite 12</p>
+				                </div>	
+				          </div>  				                                
 			        </div>
 			      </div>
   
@@ -757,7 +766,6 @@
 				          <div class="item">
 				              <img data-src="img/frames/5.jpg"/>
 				          </div>				          
-	
 			        </div>
 			      </div>
   
@@ -794,7 +802,14 @@
 				          <div class="item">
 				              <img data-src="img/garlands/4.jpg"/>
 				          </div>				          
-	
+				          
+				          <div class="item">
+				              <img data-src="img/garlands/5.jpg"/>
+				          </div>
+				         
+				          <div class="item">
+				              <img data-src="img/garlands/6.jpg"/>
+				          </div>
 			        </div>
 			      </div>
   
@@ -1137,7 +1152,30 @@
 			          <a class="carousel-control right" href="#this-carousel-id-fabrics" data-slide="next">&rsaquo;</a>
                 </div> 
             </div>
-            
+
+
+
+ <!-------------------------- Pricelist Modal --------------------------------
+ ------------------------------------------------------------------------------>
+
+ 		 <div id="pricelist" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <p class="modal-heading" id="myModalLabel">handmade pricelist</p>
+            </div>
+			    
+			    <div class="modal-body">
+			      <div id="this-carousel-id-products" class="carousel slide">
+			        <div class="carousel-inner">
+			         
+				          <div class="item active">
+				              <img data-src="img/pricelist.jpg"/>
+				          </div>
+				 
+			        </div>
+			      </div>
+        	   </div>
+         </div>              
         
 <!-- Javascript --> 
     <script src="assets/js/jquery.js"></script> 
