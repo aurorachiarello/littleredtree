@@ -274,7 +274,7 @@ i.ss-icon{
 }
 
 .carousel-caption{
-	background: #E30421;
+	background: white;
 	height: 5px;
 }
 
@@ -284,10 +284,10 @@ i.ss-icon{
 
 .carousel-text{
 	font-family:'Abel', sans-serif;
-	font-size: 15px;
-	color: white;
+	font-size: 18px;
+	color: #E30421 !important;
 	padding-right: 1em;
-	line-height: normal;
+	padding-top: .2em;
 	text-align: right;
 }
 
@@ -451,7 +451,7 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 .navbar .container{
   width: 100%;
   display: block;
-  padding-left: 3em;
+  padding-left: 0em;
   padding-right: 3em;
 }
 
@@ -468,11 +468,11 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
     left: 0;
     display: block;
     float: none;
-    margin: 0 10px 0 0;
+    margin: 0 15px 0 0 auto;
 }
 
 .navbar-inner {
-  min-height: 40px;
+  min-height: 45px;
   background-color: #E30421;
   background-image: none;
   border-color: none;
@@ -486,11 +486,14 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
   margin: 0 !important;
   padding: 0 !important;
   text-align: left;
+  padding-left: 10px;
+  display: inline-block;
+
 }
 
 .brand img {
-  max-width: 163px;
-  padding-top: 15px !important;
+  max-width: 205px;
+  padding-top: 9px !important;
 }
   
 .navbar-inverse .navbar-inner {
@@ -506,7 +509,7 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
   color: white;
   text-shadow: none;
   font-family: 'Raleway', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -515,7 +518,7 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 }
 
 .navbar .nav > li > a {
-    padding: 1px 25px 10px;
+    padding: 9px 25px 10px;
 }
 
 .navbar-inverse 
@@ -610,7 +613,7 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 	}
 
     .navbar .nav > li > a {
-        padding: 1px 15px 10px;
+        padding: 9px 15px 10px;
     }
 	
     
@@ -634,6 +637,16 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
     .contact-buttons p{
         font-size: 75%;
     }
+
+
+	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+		padding: 5px;
+		padding-left: 40px;
+	}
+
+	.navbar .btn, .navbar .btn-group {
+		margin-top: 43px;
+	}
 }
 
 
@@ -737,7 +750,7 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
   	
   	.navbar .btn-navbar{
 	  	float: right;
-	  	margin-top: 2em;
+	  	margin-top: 3em;
 	}
 	
 	.navbar-fixed-top{
