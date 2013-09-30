@@ -17,6 +17,7 @@ html,body{
 
 .about-image{
 	max-width: 100%;
+	padding-top: 100px;
 }
 
 
@@ -492,8 +493,9 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 }
 
 .brand img {
-  max-width: 205px;
+  max-width: 200px;
   padding-top: 9px !important;
+  padding-bottom: 8px;
 }
   
 .navbar-inverse .navbar-inner {
@@ -509,7 +511,7 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
   color: white;
   text-shadow: none;
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -518,7 +520,7 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 }
 
 .navbar .nav > li > a {
-    padding: 9px 25px 10px;
+    padding: 7px 20px 10px;
 }
 
 .navbar-inverse 
@@ -574,14 +576,20 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 /*---------------------------- Responsive Additions ---------------------------
  -----------------------------------------------------------------------------*/
  
-@media (min-width: 768px) and (max-width: 979px) {     
+@media (min-width: 768px) and (max-width: 1025px) {     
 
 	.navbar-fixed-top{
 		margin-bottom: 0;
 	}
+	
 	.navbar-fixed-top, .navbar-fixed-bottom {
 		position: fixed;	
 	}
+	
+	.navbar .container {
+		padding-right: 1.5em
+	}
+
 	.brand{
 		float: left !important; 
 	}
@@ -602,7 +610,7 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 		padding-top:.2em;
 		padding-bottom: .2em;
 		font-family: 'Raleway', sans-serif;
-		font-size: 14px;
+		font-size: 12px;
 	    font-weight: 100;	
 	}
 	
@@ -613,10 +621,15 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 	}
 
     .navbar .nav > li > a {
-        padding: 9px 15px 10px;
+        padding: 10px 15px 10px;
     }
 	
-    
+    .brand img {
+	    max-width: 156px;
+	    padding-top:27px !important;
+	    padding-bottom: 5px;
+	}
+
 	.footer{
 		height: 4em;
 		padding-top: 1em;
@@ -633,7 +646,14 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 	    width: 650px;
 	    margin-left: -325px;
 	} 
-
+	
+	.modal-body{
+		padding: 0;
+		overflow-y: hidden;
+		left: 0;
+		max-height: 39em;
+	    min-height: 0em;
+	}
     .contact-buttons p{
         font-size: 75%;
     }
@@ -833,6 +853,32 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 	i.ss-icon{
 		font-size: 25px;
 		line-height: 63px;
+	}
+}
+
+@media (min-width: 2560px) { 
+	.brand img {
+	 	max-width: 270px;
+	 	padding-top: 9px !important;
+		padding-bottom: 10px;
+		padding-left: 60px !important;
+	}
+	
+	.navbar .nav > li > a {
+    	padding: 30px 44px 10px;
+	}
+
+	.navbar-inverse .brand,
+	.navbar-inverse .nav > li > a {
+	  color: white;
+	  text-shadow: none;
+	  font-family: 'Raleway', sans-serif;
+	  font-size: 17px;
+	  -webkit-transition: all .5s ease;
+	  -moz-transition: all .5s ease;
+	  -o-transition: all .5s ease;
+	  -ms-transition: all .5s ease;
+	  transition: all .5s ease;
 	}
 }
 
