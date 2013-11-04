@@ -182,6 +182,20 @@ html,body{
 	text-decoration: none;
 }
 
+.stockists a{
+	font-family:'Abel', sans-serif;
+	font-size: 20px;
+	color: #E30421;
+	line-height: normal;
+	font-weight: bold;
+	text-align: left;
+}
+
+.stockists a:hover{
+	color: #404041;
+	text-decoration: none;
+}
+
 .contact-buttons{
 	display: block;
 	width: 100%;
@@ -209,11 +223,11 @@ html,body{
 	padding: 0;
 }
 
-#facebook{
+#pinterest{
 	padding: 0;
 }
 
-#stockists{
+#facebook{
 	padding: 0;
 }
 
