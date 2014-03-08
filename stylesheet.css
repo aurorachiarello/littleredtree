@@ -6,8 +6,6 @@ html,body{
 }
 
 
-
-
 /*--------------------------------- About -------------------------------------
  ------------------------------------------------------------------------------*/   
 
@@ -271,10 +269,6 @@ i.ss-icon{
  -----------------------------------------------------------------------------*/
 
 
-.modal{
-	width: 1000px;
-	margin-left:  -500px;
-}
 	
 .modal-body{
 	padding: 0;
@@ -651,23 +645,7 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 		padding-right: 2em;
 	}
 	
-	.modal.fade{
-	     top: 50%;
-	     text-align:center;
-	 }
-    
-    .modal{
-	    width: 650px;
-	    margin-left: -325px;
-	} 
-	
-	.modal-body{
-		padding: 0;
-		overflow-y: hidden;
-		left: 0;
-		max-height: 39em;
-	    min-height: 0em;
-	}
+
     .contact-buttons p{
         font-size: 75%;
     }
@@ -680,6 +658,31 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 
 	.navbar .btn, .navbar .btn-group {
 		margin-top: 43px;
+	}
+	.modal { 
+		width: 650px;
+		margin-left:  -325px;
+		height: 32em;
+	}
+	.carousel-control {
+		 position: absolute;
+		 top: 55%;
+		 left: 15px;
+		 width: 30px;
+		 height: 30px;
+		 margin-top: -20px;
+		 font-size:50px;
+		 font-weight: 100;
+		 line-height: 20px;
+		 color: #ffffff;
+		 text-align: center;
+		 background: #222222;
+		 border: 2px solid #ffffff;
+		 -webkit-border-radius: 23px;
+		 -moz-border-radius: 23px;
+		 border-radius: 23px;
+		 opacity: 0.5;
+		 filter: alpha(opacity=50);
 	}
 }
 
@@ -756,6 +759,45 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
     .contact-buttons li{
        padding-top:3px;
     }
+
+   .modal { 
+		width: 300px;
+		margin-left: 75px;
+		height: 18em;
+	}
+
+	.modal-header{
+		height: 45px;
+	}
+
+	.modal-heading {
+		font-size: 22px;
+		padding-left: 0em;
+	}
+
+	.carousel-control {
+		 position: absolute;
+		 top: 55%;
+		 left: 15px;
+		 width: 30px;
+		 height: 30px;
+		 margin-top: -20px;
+		 font-size:50px;
+		 font-weight: 100;
+		 line-height: 20px;
+		 color: #ffffff;
+		 text-align: center;
+		 background: #222222;
+		 border: 2px solid #ffffff;
+		 -webkit-border-radius: 23px;
+		 -moz-border-radius: 23px;
+		 border-radius: 23px;
+		 opacity: 0.5;
+		 filter: alpha(opacity=50);
+	}
+	.carousel-inner .item img {
+		padding-bottom: 0em;
+	}
 }
 	
 
@@ -831,32 +873,66 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
     .navbar .nav{
         padding-top: 2em;
     }
-	
-	.modal{
-		visibility: hidden;
-    }
 
     #one{
         padding-top: 70px !important;
     }
+
+
+   .modal { 
+		width: 300px;
+		margin-left: 0px;
+		height: 18em;
+	}
+
+	.modal-header{
+		height: 45px;
+	}
+
+	.modal-heading {
+		font-size: 22px;
+		padding-left: 0em;
+	}
+
+	.carousel-caption{
+		padding: 10px;
+	}
+
+	.carousel-control {
+		 position: absolute;
+		 top: 55%;
+		 left: 15px;
+		 width: 30px;
+		 height: 30px;
+		 margin-top: -20px;
+		 font-size:50px;
+		 font-weight: 100;
+		 line-height: 20px;
+		 color: #ffffff;
+		 text-align: center;
+		 background: #222222;
+		 border: 2px solid #ffffff;
+		 -webkit-border-radius: 23px;
+		 -moz-border-radius: 23px;
+		 border-radius: 23px;
+		 opacity: 0.5;
+		 filter: alpha(opacity=50);
+	}
+	.carousel-inner .item img {
+		padding-bottom: 0em;
+	}    
 } 
 
 
 
 @media (min-width: 1200px) { 
-	.modal{
-    	width: 1000px;
-		margin-left: -500px;
-	}
+
 }
  
 
 
 @media (max-width: 979px) { 
-	.modal{
-	    width: 700px;
-	    left: 360px;
-	}
+
 
     .contact-buttons a{
 		border-radius: 4em;
