@@ -354,7 +354,7 @@ i.ss-icon{
 	float: left;	
 }
 
-.aurora{
+#aurora{
 	color: white;
 	font-family:'Abel', sans-serif;
 	font-size: 14px;
@@ -362,11 +362,11 @@ i.ss-icon{
 	padding-top: .4em;
 }
 	
-.aurora a{
+#aurora a{
 	color: white;
 }
 
-.footer a:hover{
+#footer a:hover{
 	color: #404041;
 	text-decoration: none;
 }
