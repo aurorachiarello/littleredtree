@@ -926,17 +926,17 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 
 
 @media (min-width: 1200px) { 
-		  .row-fluid .offset2:first-child {
+  .row-fluid .offset2:first-child {
     margin-left: 23.5% !important;
   }
-
+  .row-fluid .span8 {
+    width: 53% !important;
+  }
 }
  
 
 
 @media (max-width: 979px) { 
-
-
     .contact-buttons a{
 		border-radius: 4em;
 		width: 4em;
