@@ -926,6 +926,9 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 
 
 @media (min-width: 1200px) { 
+		  .row-fluid .offset2:first-child {
+    margin-left: 23.5% !important;
+  }
 
 }
  
@@ -970,9 +973,7 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 	  -ms-transition: all .5s ease;
 	  transition: all .5s ease;
 	}
-	  .row-fluid .offset2:first-child {
-    margin-left: 23.5%;
-  }
+
 }
 
 
