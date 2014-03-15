@@ -926,12 +926,7 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 
 
 @media (min-width: 1200px) { 
-  .row-fluid .offset2:first-child {
-    margin-left: 23.5% !important;
-  }
-  .row-fluid .span8 {
-    width: 53% !important;
-  }
+
 }
  
 
@@ -949,12 +944,12 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 	}
 }
 
-@media (min-width: 2560px) { 
+@media (min-width: 2460px) { 
 	.brand img {
 	 	max-width: 270px;
 	 	padding-top: 9px !important;
 		padding-bottom: 10px;
-		padding-left: 60px !important;
+		padding-left: 0px !important;
 	}
 	
 	.navbar .nav > li > a {
@@ -973,7 +968,14 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 	  -ms-transition: all .5s ease;
 	  transition: all .5s ease;
 	}
-
+  
+    .row-fluid .offset2:first-child {
+      margin-left: 23.5% !important;
+    }
+  
+    .row-fluid .span8 {
+      width: 53% !important;
+    }
 }
 
 
