@@ -970,11 +970,11 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 	}
   
     .row-fluid .offset2:first-child {
-      margin-left: 23.5% !important;
+      margin-left: 25.641025641025642% !important;
     }
   
     .row-fluid .span8 {
-      width: 53% !important;
+      width: 74.35897435897436% !important;
     }
 }
 
